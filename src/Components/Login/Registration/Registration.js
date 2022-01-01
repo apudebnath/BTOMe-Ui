@@ -1,10 +1,11 @@
 import React from 'react';
-import { Button, Col, Form, Row, } from 'react-bootstrap';
+import { Button, Form, } from 'react-bootstrap';
 import image from '../../../images/reg1.jpg';
 
 const Registration = () => {
     return (
-            <div className='container py-5'>
+            <div className='container py-5
+            '>
                 <h2>Registration</h2>
                 <div className='row py-4'>
                     <div className='col-md-6 col-12 text-center flex'>

@@ -1,11 +1,12 @@
 import React from 'react';
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Registration from './Components/Login/Registration/Registration';
+import './App.css';
+import Home from './Components/Home/Home/Home';
 
 function App() {
   return (
     <div className="App">
+      <Home></Home>
     </div>
   );
 }

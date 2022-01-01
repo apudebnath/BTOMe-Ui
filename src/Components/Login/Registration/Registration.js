@@ -8,8 +8,8 @@ const Registration = () => {
         '>
             <h2>Registration</h2>
             <div className='row py-4'>
-                <div className='col-md-6 col-12 text-center flex'>
-                    <Form className='p-5'>
+                <div className='col-md-6 col-12 text-center d-flex justify-content-center align-items-center'>
+                    <Form>
                         <Form.Group className="mb-3" controlId="formBasicName">
                           <Form.Control type="text" placeholder="Enter Name" />
                         </Form.Group>

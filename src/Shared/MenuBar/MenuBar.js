@@ -6,7 +6,6 @@ const MenuBar = () => {
         <div>
             <Navbar collapseOnSelect expand="lg" >
                 <Container>
-
                     <Navbar.Brand href="#home" className="fw-bold fs-3"><img src="./logo1.png" className="w-50" alt="" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">

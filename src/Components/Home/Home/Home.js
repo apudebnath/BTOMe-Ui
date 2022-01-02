@@ -9,4 +9,4 @@ const Home = () => {
     );
 };
 
-export default Home; <MenuBar></MenuBar>
+export default Home;

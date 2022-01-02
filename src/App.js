@@ -3,8 +3,8 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Components/Home/Home/Home';
 import About from './Components/About/About';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Contact from './Components/Contact/Contact';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
     return (

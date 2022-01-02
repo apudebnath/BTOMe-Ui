@@ -136,16 +136,16 @@ const Contact = () => {
             </div>
             <div className='text-start py-5'>
                 <Container>
-                    <Row xs={1} sm={1} md={2} className='d-flex align-items-center justify-content-md-center g-5 my-5 address-text text-white'>
+                    <Row xs={1} sm={1} md={2} className='d-flex align-items-center justify-content-md-center g-5 my-5'>
                         <Col className=''>
-                            <iframe title='B2Me' width="524" height="408" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=524&amp;height=408&amp;hl=en&amp;q=10%20Dhaka+(Mirpur)&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-
+                            <iframe title='B2Me' width="524" height="408" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=524&amp;height=408&amp;hl=en&amp;q=Mirpur%20Dhaka+(B2Me)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.symptoma.com/en/info/covid-19'>Corona Virus facts</a>
                         </Col>
+
                         <Col className=''>
                             <h5>Get In Touch</h5>
 
                             {/* social media icons  */}
-                            <div className='py-2'>
+                            <div className='py-2 social-media'>
                                 <p>
                                     <a href="https://www.facebook.com/"
                                         target="_blank" rel="noreferrer">
@@ -167,7 +167,7 @@ const Contact = () => {
                                 Phone: +88-031-656570, Mobile: +88-013-656570
                             </p>
 
-                            <h5> STORE HOURS </h5>
+                            <h5> SHOP HOURS </h5>
                             <p>
                                 Monday-Saturday 11am-7pm <br />
                                 Sunday 11am-6pm

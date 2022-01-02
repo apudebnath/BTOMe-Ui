@@ -6,7 +6,7 @@ const MenuBar = () => {
         <div>
             <Navbar collapseOnSelect expand="lg" >
                 <Container>
-                    <Navbar.Brand href="#home">Bootstrap</Navbar.Brand>
+                    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">

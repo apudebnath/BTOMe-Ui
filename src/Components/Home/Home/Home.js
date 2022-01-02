@@ -8,7 +8,6 @@ import SingleProductBanner from '../SingleProductBanner/SingleProductBanner';
 const Home = () => {
     return (
         <div>
-            <MenuBar></MenuBar>
             <Banner></Banner>
             <FeaturedCategories></FeaturedCategories>
             <NewArrival></NewArrival>

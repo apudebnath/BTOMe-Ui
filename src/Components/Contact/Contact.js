@@ -134,9 +134,13 @@ const Contact = () => {
                     </Row>
                 </Container>
             </div>
-            <div className='text-start py-5 bg-address'>
+            <div className='text-start py-5'>
                 <Container>
                     <Row xs={1} sm={1} md={2} className='d-flex align-items-center justify-content-md-center g-5 my-5 address-text text-white'>
+                        <Col className=''>
+                            <iframe title='B2Me' width="524" height="408" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=524&amp;height=408&amp;hl=en&amp;q=10%20Dhaka+(Mirpur)&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+
+                        </Col>
                         <Col className=''>
                             <h5>Get In Touch</h5>
 
@@ -163,8 +167,6 @@ const Contact = () => {
                                 Phone: +88-031-656570, Mobile: +88-013-656570
                             </p>
 
-                        </Col>
-                        <Col className=''>
                             <h5> STORE HOURS </h5>
                             <p>
                                 Monday-Saturday 11am-7pm <br />
@@ -178,6 +180,9 @@ const Contact = () => {
                         </Col>
                     </Row>
                 </Container>
+            </div>
+            <div>
+
             </div>
         </div>
     );

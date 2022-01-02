@@ -1,4 +1,10 @@
-.bg-address{
+.social-media a{
+    color: black;
+}
+.social-media a:hover{
+    color: #f08229dc;
+}
+/* .bg-address{
     background-image: url('https://i.ibb.co/xX3RHX7/image.png');
     background-attachment: fixed;
     background-size: cover;
@@ -12,4 +18,4 @@
 .address-text:hover{
     background-color: rgba(3, 3, 3, 0.9);
     border-radius: 20px;
-}
+} */

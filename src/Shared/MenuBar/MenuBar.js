@@ -8,7 +8,7 @@ const MenuBar = () => {
                 <Container>
                     <div className='row'>
                         <div className='col-6 '>
-                            <Navbar.Brand href="#home" className="fw-bold fs-3"><img src="./logo1.png" className="w-50" alt="" /></Navbar.Brand>
+                            <Navbar.Brand href="home" className="fw-bold fs-3"><img src="./logo1.png" className="w-50" alt="" /></Navbar.Brand>
                         </div>
                         <div className='col-6'>
                             <Navbar.Toggle aria-controls="responsive-navbar-nav" />

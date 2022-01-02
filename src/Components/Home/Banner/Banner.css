@@ -1,0 +1,21 @@
+.banner-image-size{
+    height: 550px;
+   
+}
+.slick-track{
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) and (min-width: 320px) {
+
+.banner-image-size{
+    height: 200px;
+   
+}
+.slick-track{
+    width: 90% ;
+}
+
+
+
+}

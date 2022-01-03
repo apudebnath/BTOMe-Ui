@@ -28,23 +28,23 @@ function App() {
             <MenuBar />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="home" element={<Home />} />
-                <Route path="allcategories" element={<AllCategories />} />
-                <Route path="shop" element={<Shop />} />
-                <Route path="furniture" element={<Furniture />} />
-                <Route path="clocks" element={<Clocks />} />
-                <Route path="lights" element={<Lights />} />
-                <Route path="toys" element={<Toys />} />
-                <Route path="accessories" element={<Accessories />} />
+                <Route path="/home" element={<Home />} >
+                    <Route path="allcategories" element={<AllCategories />} />
+                    <Route path="furniture" element={<Furniture />} />
+                    <Route path="clocks" element={<Clocks />} />
+                    <Route path="lights" element={<Lights />} />
+                    <Route path="toys" element={<Toys />} />
+                    <Route path="accessories" element={<Accessories />} />
+                </Route>
                 <Route path="about" element={<About />} />
                 <Route path="contact" element={<Contact />} />
                 <Route path="dashboard" element={<Dashboard />}>
                     <Route path="/dashboard" element={<DashboardHome />} />
-                    <Route path="/dashboard/orders" element={<Orders />} />
-                    <Route path="/dashboard/messages" element={<UsersMessages />} />
-                    <Route path="/dashboard/addProduct" element={<AddProduct />} />
-                    <Route path="/dashboard/manageProducts" element={<ManageProduct />} />
-                    <Route path="/dashboard/makeAdmin" element={<MakeAdmin />} />
+                    <Route path="orders" element={<Orders />} />
+                    <Route path="messages" element={<UsersMessages />} />
+                    <Route path="addProduct" element={<AddProduct />} />
+                    <Route path="manageProducts" element={<ManageProduct />} />
+                    <Route path="makeAdmin" element={<MakeAdmin />} />
                 </Route>
                 <Route path="*" element={<NotFound />} />
             </Routes>

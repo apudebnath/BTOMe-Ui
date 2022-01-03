@@ -18,13 +18,13 @@ const AddProduct = () => {
 
     return (
         <div>
-            <div className="add-course">
-                <div className="bg-add-course mx-auto">
+            <div className="add-product">
+                <div className="bg-add-product mx-auto">
                     <h2>Add a Product</h2>
 
                     <form onSubmit={handleSubmit(onSubmit)}>
 
-                        <input {...register("name", { required: true, maxLength: 50 })} className='w-25' placeholder="Product Name" />
+                        <input {...register("name", { required: true, maxLength: 50 })} className='w-50' placeholder="Product Name" />
 
                         <div className="row d-flex justify-content-center">
                             <div className="col-md-5">
@@ -47,7 +47,7 @@ const AddProduct = () => {
 
                         </div>
 
-                        <input type="submit" value="Add" className="btn-outline-primary w-25" />
+                        <input type="submit" value="Add" className="btn-outline-primary w-50" />
                     </form>
 
                 </div>

@@ -1,21 +1,21 @@
-.add-course{
-    background-image: url('https://i.ibb.co/ypFfrpS/image.png');
+.add-product{
+    background-image: url('https://i.ibb.co/K9S2Lxr/image.png');
     background-size: cover;
     background-attachment: fixed;
 }
-.bg-add-course {
+.bg-add-product {
     padding: 150px 0 100px;
     background-color: rgba(29, 25, 25, 0.6); 
     color: white;
 }
-.add-course form{
+.add-product form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.add-course form input, textarea{
+.add-product form input, textarea{
     width: 70%;
     margin: 10px;
     padding: 10px 20px;

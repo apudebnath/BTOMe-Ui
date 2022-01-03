@@ -13,7 +13,7 @@ const ManageProduct = () => {
     }, []);
 
     const handleDelete = id => {
-        axios.delete(`https://gentle-woodland-78175.herokuapp.com/all-products/${id}`)
+        axios.delete(`https://gentle-woodland-78175.herokuapp.com/delete-single-product/${id}`)
             .then(res => {
                 if (res.data.deletedCount > 0) {
                     alert('Are you sure to delete this Product?');

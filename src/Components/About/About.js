@@ -8,7 +8,7 @@ import './About.css';
 
 const About = () => {
     return (
-        <div className='bg-light'>
+        <div className='body bg-light'>
             <div>
                 <img className='h-25 w-100' src="https://i.ibb.co/7R56G9m/image.png" alt="" />
             </div>

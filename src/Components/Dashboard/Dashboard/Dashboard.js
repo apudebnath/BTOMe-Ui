@@ -25,12 +25,12 @@ function Dashboard(props) {
     };
 
     const buttons = [
-        <Button as={Link} to="/dashboard" key="one">Dashboard</Button>,
-        <Button as={Link} to="orders" key="two">Manage Orders</Button>,
-        <Button as={Link} to="messages" key="three">Users Messages</Button>,
-        <Button as={Link} to="addProduct" key="four">Add a Product</Button>,
-        <Button as={Link} to="manageProducts" key="five">Manage Products</Button>,
-        <Button as={Link} to="makeAdmin" key="six">Make An Admin</Button>,
+        <Button key="one"> <Link className='text-decoration-none' to="/dashboard"> Dashboard </Link></Button>,
+        <Button key="two"><Link className='text-decoration-none' to="orders">Manage Orders </Link></Button>,
+        <Button key="three"><Link className='text-decoration-none' to="messages">Users Messages </Link></Button>,
+        <Button key="four"><Link className='text-decoration-none' to="addProduct">Add a Product</Link> </Button>,
+        <Button key="five"><Link className='text-decoration-none' to="manageProducts">Manage Products </Link></Button>,
+        <Button key="six"><Link className='text-decoration-none' to="makeAdmin">Make An Admin </Link></Button>,
     ];
 
     const drawer = (

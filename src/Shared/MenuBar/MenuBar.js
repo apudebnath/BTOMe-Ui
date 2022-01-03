@@ -9,7 +9,6 @@ const MenuBar = () => {
         <div>
             <Navbar collapseOnSelect expand="lg" className="bg-white" variant="light" fixed='top'>
                 <Container>
-
                     <Navbar.Brand as={Link} to='/'>
                         <img src="./logo1.png"
                             width="180"
@@ -42,7 +41,6 @@ const MenuBar = () => {
                             </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
-
                 </Container>
             </Navbar>
         </div>

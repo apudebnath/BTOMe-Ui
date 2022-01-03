@@ -2,6 +2,7 @@ import React from 'react';
 import AllProducts from '../AllProducts/AllProducts';
 import Banner from '../Banner/Banner';
 import FeaturedCategories from '../FeaturedCategories/FeaturedCategories';
+import Footer from '../Footer/Footer';
 import NewArrival from '../NewArrival/NewArrival';
 import SingleProductBanner from '../SingleProductBanner/SingleProductBanner';
 
@@ -12,7 +13,8 @@ const Home = () => {
             <FeaturedCategories></FeaturedCategories>
             <NewArrival></NewArrival>
             <SingleProductBanner></SingleProductBanner>
-            <AllProducts />
+            <AllProducts/>
+            <Footer/>
         </div>
     );
 };

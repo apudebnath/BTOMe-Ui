@@ -28,14 +28,14 @@ function App() {
             <MenuBar />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="home" element={<Home />} />
-                <Route path="allcategories" element={<AllCategories />} />
-                <Route path="shop" element={<Shop />} />
-                <Route path="furniture" element={<Furniture />} />
-                <Route path="clocks" element={<Clocks />} />
-                <Route path="lights" element={<Lights />} />
-                <Route path="toys" element={<Toys />} />
-                <Route path="accessories" element={<Accessories />} />
+                <Route path="/home" element={<Home />} >
+                    <Route path="allcategories" element={<AllCategories />} />
+                    <Route path="furniture" element={<Furniture />} />
+                    <Route path="clocks" element={<Clocks />} />
+                    <Route path="lights" element={<Lights />} />
+                    <Route path="toys" element={<Toys />} />
+                    <Route path="accessories" element={<Accessories />} />
+                </Route>
                 <Route path="about" element={<About />} />
                 <Route path="contact" element={<Contact />} />
                 <Route path="dashboard" element={<Dashboard />}>
@@ -53,3 +53,4 @@ function App() {
 }
 
 export default App;
+

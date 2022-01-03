@@ -8,7 +8,7 @@ import './Contact.css';
 
 const Contact = () => {
     return (
-        <div className='bg-light'>
+        <div className='body bg-light'>
             <div>
                 <img className='h-25 w-100' src="https://i.ibb.co/7R56G9m/image.png" alt="" />
             </div>
@@ -138,7 +138,7 @@ const Contact = () => {
                 <Container>
                     <Row xs={1} sm={1} md={2} className='d-flex align-items-center justify-content-md-center g-5 my-5'>
                         <Col className=''>
-                            <iframe title='B2Me' width="524" height="408" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=524&amp;height=408&amp;hl=en&amp;q=Mirpur%20Dhaka+(B2Me)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.symptoma.com/en/info/covid-19'>Corona Virus facts</a>
+                            <iframe title='B2Me' width="524" height="408" frameBorder={0} scrolling="no" marginHeight={0} marginWidth={0} id="gmap_canvas" src="https://maps.google.com/maps?width=524&amp;height=408&amp;hl=en&amp;q=Mirpur%20Dhaka+(B2Me)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.symptoma.com/en/info/covid-19'>Corona Virus facts</a>
                         </Col>
 
                         <Col className=''>

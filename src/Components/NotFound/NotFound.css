@@ -1,0 +1,11 @@
+.bg-404{ 
+    background-image: url(https://assets.materialup.com/uploads/c13818e8-9e42-4f4d-b657-38743a81b270/preview.gif);
+    margin-top: -150px;
+    height: 820px;
+    background-size: cover;
+ }
+
+.btn-404{
+    margin-top:670px;
+    padding: 15px 75px;
+}

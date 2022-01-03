@@ -1,0 +1,23 @@
+.add-product{
+    background-image: url('https://i.ibb.co/K9S2Lxr/image.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bg-add-product {
+    padding: 150px 0 100px;
+    background-color: rgba(29, 25, 25, 0.6); 
+    color: white;
+}
+.add-product form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-product form input, textarea{
+    width: 80%;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 15px;
+}

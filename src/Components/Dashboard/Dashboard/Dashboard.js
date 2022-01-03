@@ -34,15 +34,15 @@ function Dashboard(props) {
             <Divider />
             <Link to="/dashboard"> <Button color="inherit"> Dashboard </Button> </Link>
             <br />
-            <Link to="/dashboard/orders"> <Button color="inherit">Manage Orders</Button> </Link>
+            <Link to="orders"> <Button color="inherit">Manage Orders</Button> </Link>
             <br />
-            <Link to="/dashboard/messages"> <Button color="inherit">Users Messages</Button> </Link>
+            <Link to="messages"> <Button color="inherit">Users Messages</Button> </Link>
             <br />
-            <Link to="/dashboard/addProduct"> <Button color="inherit">Add a Product</Button> </Link>
+            <Link to="addProduct"> <Button color="inherit">Add a Product</Button> </Link>
             <br />
-            <Link to="/dashboard/manageProducts"> <Button color="inherit">Manage Products</Button> </Link>
+            <Link to="manageProducts"> <Button color="inherit">Manage Products</Button> </Link>
             <br />
-            <Link to="/dashboard/makeAdmin"> <Button color="inherit">Make An Admin</Button> </Link>
+            <Link to="makeAdmin"> <Button color="inherit">Make An Admin</Button> </Link>
 
             <Divider />
         </div>

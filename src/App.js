@@ -40,11 +40,11 @@ function App() {
                 <Route path="contact" element={<Contact />} />
                 <Route path="dashboard" element={<Dashboard />}>
                     <Route path="/dashboard" element={<DashboardHome />} />
-                    <Route path="/dashboard/orders" element={<Orders />} />
-                    <Route path="/dashboard/messages" element={<UsersMessages />} />
-                    <Route path="/dashboard/addProduct" element={<AddProduct />} />
-                    <Route path="/dashboard/manageProducts" element={<ManageProduct />} />
-                    <Route path="/dashboard/makeAdmin" element={<MakeAdmin />} />
+                    <Route path="orders" element={<Orders />} />
+                    <Route path="messages" element={<UsersMessages />} />
+                    <Route path="addProduct" element={<AddProduct />} />
+                    <Route path="manageProducts" element={<ManageProduct />} />
+                    <Route path="makeAdmin" element={<MakeAdmin />} />
                 </Route>
                 <Route path="*" element={<NotFound />} />
             </Routes>

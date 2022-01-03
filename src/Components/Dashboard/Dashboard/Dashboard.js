@@ -7,16 +7,12 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { Button } from '@mui/material';
+import ButtonGroup from '@mui/material/ButtonGroup';
+
 
 const drawerWidth = 240;
 
@@ -28,22 +24,34 @@ function Dashboard(props) {
         setMobileOpen(!mobileOpen);
     };
 
+    const buttons = [
+        <Button as={Link} to="/dashboard" key="one">Dashboard</Button>,
+        <Button as={Link} to="orders" key="two">Manage Orders</Button>,
+        <Button as={Link} to="messages" key="three">Users Messages</Button>,
+        <Button as={Link} to="addProduct" key="four">Add a Product</Button>,
+        <Button as={Link} to="manageProducts" key="five">Manage Products</Button>,
+        <Button as={Link} to="makeAdmin" key="six">Make An Admin</Button>,
+    ];
+
     const drawer = (
         <div>
-            <Toolbar />
+            <Link to="/">
+                <img src="../logo1.png"
+                    width="200"
+                    height="80"
+                    className="d-inline-block align-top" alt="B2Me logo" />
+            </Link>
             <Divider />
-            <Link to="/dashboard"> <Button color="inherit"> Dashboard </Button> </Link>
-            <br />
-            <Link to="/dashboard/orders"> <Button color="inherit">Manage Orders</Button> </Link>
-            <br />
-            <Link to="/dashboard/messages"> <Button color="inherit">Users Messages</Button> </Link>
-            <br />
-            <Link to="/dashboard/addProduct"> <Button color="inherit">Add a Product</Button> </Link>
-            <br />
-            <Link to="/dashboard/manageProducts"> <Button color="inherit">Manage Products</Button> </Link>
-            <br />
-            <Link to="/dashboard/makeAdmin"> <Button color="inherit">Make An Admin</Button> </Link>
-
+            <div className='py-5 ps-4'>
+                <ButtonGroup
+                    orientation="vertical"
+                    aria-label="vertical contained button group"
+                    variant="outlined"
+                    sx={{ p: 3 }}
+                >
+                    {buttons}
+                </ButtonGroup>
+            </div>
             <Divider />
         </div>
     );
@@ -70,9 +78,18 @@ function Dashboard(props) {
                     >
                         <MenuIcon />
                     </IconButton>
+
                     <Typography variant="h6" noWrap component="div">
                         Dashboard
                     </Typography>
+
+                    {/* <Link to='/'>
+                        <img src="../logo1.png"
+                            width="150"
+                            height="60"
+                            className="d-inline-block align-top" alt="BToMe logo" />
+                    </Link> */}
+
                 </Toolbar>
             </AppBar>
 

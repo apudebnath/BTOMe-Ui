@@ -35,7 +35,7 @@ const MenuBar = () => {
                                 <FontAwesomeIcon className="mx-2" icon={faShoppingCart} size='1x' />
 
                             </Nav.Link>
-                            <Nav.Link as={Link} to="/user">
+                            <Nav.Link as={Link} to="/dashboard">
                                 <FontAwesomeIcon className="mx-2" icon={faUser} size='1x' />
 
                             </Nav.Link>

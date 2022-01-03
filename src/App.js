@@ -14,6 +14,13 @@ import Accessories from './Components/Categories/Accessories/Accessories';
 import AllCategories from './Components/Categories/AllCategories/AllCategories';
 import NotFound from './Components/NotFound/NotFound';
 import MenuBar from './Components/Shared/MenuBar/MenuBar';
+import Dashboard from './Components/Dashboard/Dashboard/Dashboard';
+import DashboardHome from './Components/Dashboard/DashboardHome/DashboardHome';
+import Orders from './Components/Dashboard/Orders/Orders';
+import UsersMessages from './Components/Dashboard/UsersMessages/UsersMessages';
+import AddProduct from './Components/Dashboard/AddProduct/AddProduct';
+import ManageProduct from './Components/Dashboard/ManageProduct/ManageProduct';
+import MakeAdmin from './Components/Dashboard/MakeAdmin/MakeAdmin';
 
 function App() {
     return (
@@ -31,6 +38,14 @@ function App() {
                 <Route path="accessories" element={<Accessories />} />
                 <Route path="about" element={<About />} />
                 <Route path="contact" element={<Contact />} />
+                <Route path="dashboard" element={<Dashboard />}>
+                    <Route path="/dashboard" element={<DashboardHome />} />
+                    <Route path="/dashboard/orders" element={<Orders />} />
+                    <Route path="/dashboard/messages" element={<UsersMessages />} />
+                    <Route path="/dashboard/addProduct" element={<AddProduct />} />
+                    <Route path="/dashboard/manageProducts" element={<ManageProduct />} />
+                    <Route path="/dashboard/makeAdmin" element={<MakeAdmin />} />
+                </Route>
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </div>

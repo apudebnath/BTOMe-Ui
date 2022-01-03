@@ -30,12 +30,12 @@ function Dashboard(props) {
 
     const drawer = (
         <div>
-            <div>
+            <Link to="/">
                 <img src="../logo1.png"
                     width="200"
                     height="80"
                     className="d-inline-block align-top" alt="B2Me logo" />
-            </div>
+            </Link>
             <Divider />
             <Link to="/dashboard"> <Button color="inherit"> Dashboard </Button> </Link>
             <br />
@@ -75,15 +75,18 @@ function Dashboard(props) {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Link t0='/'>
+
+                    <Typography variant="h6" noWrap component="div">
+                        Dashboard
+                    </Typography>
+
+                    {/* <Link to='/'>
                         <img src="../logo1.png"
                             width="150"
                             height="60"
                             className="d-inline-block align-top" alt="BToMe logo" />
-                    </Link>
-                    <Typography variant="h6" noWrap component="div">
-                        Dashboard
-                    </Typography>
+                    </Link> */}
+
                 </Toolbar>
             </AppBar>
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import MenuBar from '../../../Shared/MenuBar/MenuBar';
 import AllProducts from '../AllProducts/AllProducts';
 import Banner from '../Banner/Banner';
 import FeaturedCategories from '../FeaturedCategories/FeaturedCategories';

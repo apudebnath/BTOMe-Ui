@@ -24,7 +24,7 @@ const Contact = () => {
                     </h6>
                 </div>
                 <Container className='text-start'>
-                    <Row xs={1} sm={1} md={2} className='d-flex align-items-center justify-content-md-center g-5'>
+                    <Row xs={1} sm={1} md={2} className='d-flex align-items-top justify-content-md-center g-5'>
                         <Col>
                             <p>INFORMATION QUESTIONS</p>
                             <h3 className='pb-3'>FREQUENTLY ASKED QUESTIONS</h3>
@@ -136,7 +136,7 @@ const Contact = () => {
             </div>
             <div className='text-start py-5'>
                 <Container>
-                    <Row xs={1} sm={1} md={2} className='d-flex align-items-center justify-content-md-center g-5 my-5'>
+                    <Row xs={1} sm={1} md={2} className='d-flex align-items-top justify-content-md-center g-5 my-5'>
                         <Col className=''>
                             <iframe title='B2Me' width="524" height="408" frameBorder={0} scrolling="no" marginHeight={0} marginWidth={0} id="gmap_canvas" src="https://maps.google.com/maps?width=524&amp;height=408&amp;hl=en&amp;q=Mirpur%20Dhaka+(B2Me)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.symptoma.com/en/info/covid-19'>Corona Virus facts</a>
                         </Col>

@@ -13,17 +13,17 @@ import Toys from './Components/Categories/Toys/Toys';
 import Accessories from './Components/Categories/Accessories/Accessories';
 import AllCategories from './Components/Categories/AllCategories/AllCategories';
 import NotFound from './Components/NotFound/NotFound';
-import MenuBar from './Shared/MenuBar/MenuBar';
+import MenuBar from './Components/Shared/MenuBar/MenuBar';
 
 function App() {
     return (
         <div className="App">
             <MenuBar />
             <Routes>
-                <Route path="/" element={<Home />} >
+                <Route path="/" element={<Home />} />
                 <Route path="home" element={<Home />} />
                 <Route path="allcategories" element={<AllCategories />} />
-                <Route path="shop" element={<Shop />} >
+                <Route path="shop" element={<Shop />} />
                 <Route path="furniture" element={<Furniture />} />
                 <Route path="clocks" element={<Clocks />} />
                 <Route path="lights" element={<Lights />} />

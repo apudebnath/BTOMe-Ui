@@ -1,0 +1,8 @@
+.manage-products{
+    padding: 95px 0;
+    background-image: url('https://i.ibb.co/PQjJnNZ/image.png'), url('https://i.ibb.co/p4TfjNV/image.png');
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 500px;
+    background-blend-mode: screen;
+}

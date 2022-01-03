@@ -7,7 +7,7 @@ const FeaturedCategories = () => {
             <div className="text-center mt-5 pt-5">
                 <p className="pt-5">B2Me COLLECTIONS</p>
                 <h3>FEATURED CATEGORIES</h3>
-                <p>WoodMart is a powerful eCommerce theme for WordPress.</p>
+                <p>BTOMe is a trusted and powerful eCommerce store for all.</p>
             </div>
             <Container>
                 <Row>

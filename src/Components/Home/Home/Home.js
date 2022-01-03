@@ -1,4 +1,5 @@
 import React from 'react';
+import AllProducts from '../AllProducts/AllProducts';
 import Banner from '../Banner/Banner';
 import FeaturedCategories from '../FeaturedCategories/FeaturedCategories';
 import NewArrival from '../NewArrival/NewArrival';
@@ -11,6 +12,7 @@ const Home = () => {
             <FeaturedCategories></FeaturedCategories>
             <NewArrival></NewArrival>
             <SingleProductBanner></SingleProductBanner>
+            <AllProducts />
         </div>
     );
 };

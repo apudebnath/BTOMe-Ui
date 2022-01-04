@@ -20,7 +20,7 @@ const Home = () => {
             <LatestNews/>
             <NewsLetter/>
             <SocialMedia/>
-            <Footer/>
+            
         </div>
     );
 };

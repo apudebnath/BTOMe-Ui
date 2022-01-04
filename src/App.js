@@ -32,9 +32,9 @@ function App() {
         <div className="App">
             <MenuBar />
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/home" element={<Home />} >
-                    <Route path="/home" element={<AllCategories />} />
+                <Route path="/home" element={<Home />} />
+                <Route path="/" element={<Home />} >
+                    <Route path="/" element={<AllCategories />} />
                     <Route path="furniture" element={<Furniture />} />
                     <Route path="clocks" element={<Clocks />} />
                     <Route path="lights" element={<Lights />} />
@@ -57,7 +57,7 @@ function App() {
                 </Route>
                 <Route path="*" element={<NotFound />} />
             </Routes>
-            <Footer/>
+            
         </div>
     );
 }

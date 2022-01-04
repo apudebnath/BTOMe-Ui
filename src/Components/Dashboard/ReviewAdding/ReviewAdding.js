@@ -6,8 +6,8 @@ import { useForm } from "react-hook-form";
 
 const ReviewAdding = () => {
     const [value, setValue] = React.useState(4);
-
     const { register, handleSubmit, reset } = useForm();
+
     const onSubmit = data => {
         console.log(data);
         axios.post('https://gentle-woodland-78175.herokuapp.com/reviews', data)

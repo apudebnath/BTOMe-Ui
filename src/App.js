@@ -25,8 +25,6 @@ import ProductDetails from './Components/ProductDetails/ProductDetails';
 import Login from './Components/Login/Login/Login';
 import Registration from './Components/Login/Registration/Registration';
 import Payment from './Components/Payment/Payment';
-import AllProducts from './Components/Home/AllProducts/AllProducts';
-import Footer from './Components/Home/Footer/Footer';
 import Blog from './Components/Blog/Blog';
 
 function App() {

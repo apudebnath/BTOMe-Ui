@@ -25,8 +25,8 @@ import ProductDetails from './Components/ProductDetails/ProductDetails';
 import Login from './Components/Login/Login/Login';
 import Registration from './Components/Login/Registration/Registration';
 import Payment from './Components/Payment/Payment';
-import AllProducts from './Components/Home/AllProducts/AllProducts';
 import Footer from './Components/Home/Footer/Footer';
+import Blog from './Components/Blog/Blog';
 
 
 function App() {
@@ -44,6 +44,7 @@ function App() {
                     <Route path="accessories" element={<Accessories />} />
                 </Route>
                 <Route path="shop" element={<Shop />} />
+                <Route path="blog" element={<Blog />} />
                 <Route path="productdetails/:id" element={<ProductDetails />} />
                 <Route path="about" element={<About />} />
                 <Route path="contact" element={<Contact />} />

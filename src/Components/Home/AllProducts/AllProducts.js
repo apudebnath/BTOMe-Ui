@@ -20,8 +20,8 @@ const AllProducts = () => {
                    <Link className='text-decoration-none pe-3' to="furniture">Furniture</Link>
                    <Link className='text-decoration-none pe-3' to="clocks">Clocks</Link>
                    <Link className='text-decoration-none pe-3' to="lights">Lights</Link>
-                   <Link className='text-decoration-none pe-3' to="toys">Toys</Link>
-                   <Link className='text-decoration-none pe-0' to="accessories">Accessories</Link>
+                   <Link className='text-decoration-none pe-3' to="skincare">SkinCare</Link>
+                   <Link className='text-decoration-none pe-0' to="jewelry">Jewelry</Link>
                 </div>
             </div>
             <div className='border'> 

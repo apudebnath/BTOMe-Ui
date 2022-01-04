@@ -13,8 +13,7 @@ import Shop from './Components/Shop/Shop';
 import Furniture from './Components/Categories/Furniture/Furniture';
 import Clocks from './Components/Categories/Clocks/Clocks';
 import Lights from './Components/Categories/Lights/Lights';
-import Toys from './Components/Categories/Toys/Toys';
-import Accessories from './Components/Categories/Accessories/Accessories';
+import Jewelry from './Components/Categories/Jewelry/Jewelry';
 import AllCategories from './Components/Categories/AllCategories/AllCategories';
 import NotFound from './Components/NotFound/NotFound';
 import MenuBar from './Components/Shared/MenuBar/MenuBar';
@@ -33,6 +32,7 @@ import Blog from './Components/Blog/Blog';
 import FirebaseProvider from './context/FirebaseProvider';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import AdminPrivateRoute from './PrivateRoute/AdminPrivateRoute';
+import SkinCare from './Components/Categories/SkinCare/SkinCare';
 
 function App() {
     return (
@@ -40,14 +40,14 @@ function App() {
             <Router>
             <MenuBar/>
             <Routes>
-            <Route path="home" element={<Home />} />
+                <Route path="home" element={<Home />} />
                 <Route path="/" element={<Home />} >
                     <Route path="/" element={<AllCategories />} />
                     <Route path="furniture" element={<Furniture />} />
                     <Route path="clocks" element={<Clocks />} />
                     <Route path="lights" element={<Lights />} />
-                    <Route path="toys" element={<Toys />} />
-                    <Route path="accessories" element={<Accessories />} />
+                    <Route path="skincare" element={<SkinCare />} />
+                    <Route path="jewelry" element={<Jewelry />} />
                 </Route>
                 <Route path="shop" element={<Shop />} />
                 <Route path="blog" element={<Blog />} />

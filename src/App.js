@@ -1,6 +1,10 @@
 import './App.css';
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route, 
+  } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Components/Home/Home/Home';
 import About from './Components/About/About';
@@ -28,13 +32,17 @@ import Payment from './Components/Payment/Payment';
 import AllProducts from './Components/Home/AllProducts/AllProducts';
 import Footer from './Components/Home/Footer/Footer';
 import Blog from './Components/Blog/Blog';
+import FirebaseProvider from './context/FirebaseProvider';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
+import AdminPrivateRoute from './PrivateRoute/AdminPrivateRoute';
 
 function App() {
     return (
-        <div className="App">
-            <MenuBar />
+        <FirebaseProvider>
+            <Router>
+            <MenuBar/>
             <Routes>
-                <Route path="/home" element={<Home />} />
+            <Route path="home" element={<Home />} />
                 <Route path="/" element={<Home />} >
                     <Route path="/" element={<AllCategories />} />
                     <Route path="furniture" element={<Furniture />} />
@@ -50,18 +58,41 @@ function App() {
                 <Route path="contact" element={<Contact />} />
                 <Route path="login" element={<Login />} />
                 <Route path="registration" element={<Registration />} />
-                <Route path="dashboard" element={<Dashboard />}>
-                    <Route path="/dashboard" element={<DashboardHome />} />
-                    <Route path="orders" element={<Orders />} />
-                    <Route path="payment" element={<Payment />} />
-                    <Route path="review" element={<ReviewAdding />} />
-                    <Route path="addProduct" element={<AddProduct />} />
-                    <Route path="manageProducts" element={<ManageProduct />} />
-                    <Route path="makeAdmin" element={<MakeAdmin />} />
+                <Route path="dashboard" element={<PrivateRoute>
+                    <Dashboard />
+                </PrivateRoute>}>
+                    <Route path="/dashboard" element={<AdminPrivateRoute>
+                        <DashboardHome />
+                    </AdminPrivateRoute>} />
+                    <Route path="orders" element={<AdminPrivateRoute>
+                        <Orders />
+                    </AdminPrivateRoute>} />
+                    <Route path="payment" element={
+                        <AdminPrivateRoute>
+                            <Payment />
+                        </AdminPrivateRoute>
+                    } />
+                    <Route path="review" element={
+                        <AdminPrivateRoute>
+                            <ReviewAdding />
+                        </AdminPrivateRoute>
+                    } />
+                    <Route path="addProduct" element={
+                        <AdminPrivateRoute>
+                            <AddProduct />
+                        </AdminPrivateRoute>
+                    } />
+                    <Route path="manageProducts" element={<AdminPrivateRoute>
+                        <ManageProduct />
+                    </AdminPrivateRoute>} />
+                    <Route path="makeAdmin" element={<AdminPrivateRoute>
+                        <MakeAdmin />
+                    </AdminPrivateRoute>} />
                 </Route>
                 <Route path="*" element={<NotFound />} />
             </Routes>
-        </div>
+        </Router>
+        </FirebaseProvider>
     );
 }
 

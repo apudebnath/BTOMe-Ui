@@ -22,6 +22,8 @@ import ManageProduct from './Components/Dashboard/ManageProduct/ManageProduct';
 import MakeAdmin from './Components/Dashboard/MakeAdmin/MakeAdmin';
 import ReviewAdding from './Components/Dashboard/ReviewAdding/ReviewAdding';
 import ProductDetails from './Components/ProductDetails/ProductDetails';
+import Login from './Components/Login/Login/Login';
+import Registration from './Components/Login/Registration/Registration';
 
 function App() {
     return (
@@ -41,6 +43,8 @@ function App() {
                 <Route path="productdetails/:id" element={<ProductDetails />} />
                 <Route path="about" element={<About />} />
                 <Route path="contact" element={<Contact />} />
+                <Route path="login" element={<Login />} />
+                <Route path="registration" element={<Registration />} />
                 <Route path="dashboard" element={<Dashboard />}>
                     <Route path="/dashboard" element={<DashboardHome />} />
                     <Route path="orders" element={<Orders />} />

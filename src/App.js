@@ -17,10 +17,10 @@ import MenuBar from './Components/Shared/MenuBar/MenuBar';
 import Dashboard from './Components/Dashboard/Dashboard/Dashboard';
 import DashboardHome from './Components/Dashboard/DashboardHome/DashboardHome';
 import Orders from './Components/Dashboard/Orders/Orders';
-import UsersMessages from './Components/Dashboard/UsersMessages/UsersMessages';
 import AddProduct from './Components/Dashboard/AddProduct/AddProduct';
 import ManageProduct from './Components/Dashboard/ManageProduct/ManageProduct';
 import MakeAdmin from './Components/Dashboard/MakeAdmin/MakeAdmin';
+import ReviewAdding from './Components/Dashboard/ReviewAdding/ReviewAdding';
 
 function App() {
     return (
@@ -41,7 +41,7 @@ function App() {
                 <Route path="dashboard" element={<Dashboard />}>
                     <Route path="/dashboard" element={<DashboardHome />} />
                     <Route path="orders" element={<Orders />} />
-                    <Route path="messages" element={<UsersMessages />} />
+                    <Route path="review" element={<ReviewAdding />} />
                     <Route path="addProduct" element={<AddProduct />} />
                     <Route path="manageProducts" element={<ManageProduct />} />
                     <Route path="makeAdmin" element={<MakeAdmin />} />

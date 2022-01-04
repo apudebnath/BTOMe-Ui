@@ -69,7 +69,7 @@ const Contact = () => {
                             </Accordion>
                         </Col>
 
-                        <Col className='pt-3'>
+                        <Col className='pt-4'>
                             <h3 className='pb-1'>Send Us Your Message</h3>
                             <hr />
                             <form action="">
@@ -112,7 +112,6 @@ const Contact = () => {
                                         className="mb-3"
                                     >
                                         <Form.Control
-                                            as="textarea"
                                             className="form-control"
                                             type="text"
                                             name="message"

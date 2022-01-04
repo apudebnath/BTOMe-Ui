@@ -16,7 +16,7 @@ const AllProducts = () => {
                    <h3 className="text-start">All Products-</h3>
                 </div>
                 <div className='col-md-6 text-end'>
-                   <Link className='text-decoration-none pe-3' to="home">All</Link>
+                   <Link className='text-decoration-none pe-3' to="/home">All</Link>
                    <Link className='text-decoration-none pe-3' to="furniture">Furniture</Link>
                    <Link className='text-decoration-none pe-3' to="clocks">Clocks</Link>
                    <Link className='text-decoration-none pe-3' to="lights">Lights</Link>

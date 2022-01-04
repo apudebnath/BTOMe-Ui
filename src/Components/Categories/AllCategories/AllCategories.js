@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './AllCategories.css';
 
 const AllCategories = () => {
@@ -16,6 +17,7 @@ const AllCategories = () => {
                 <div className="row row-cols-1 row-cols-md-4 g-4 text-start">
                     {
                         products.slice(0,8).map(product => <div key={product._id} className="col">
+                            <Link to={`/productdetails/${product._id}`} style={{textDecoration: 'none'}}>
                             <div className="card single-product">
                                 <div className='product-image'>
                                     <img src={product.productImage} className="card-img-top"  alt="..." />
@@ -25,6 +27,7 @@ const AllCategories = () => {
                                     <p className="card-text text-success fw-bold">$ {product.productMainPrice}</p>
                                 </div>
                             </div>
+                            </Link>
                         </div>)
                     }  
                 </div>

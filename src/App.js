@@ -21,6 +21,7 @@ import AddProduct from './Components/Dashboard/AddProduct/AddProduct';
 import ManageProduct from './Components/Dashboard/ManageProduct/ManageProduct';
 import MakeAdmin from './Components/Dashboard/MakeAdmin/MakeAdmin';
 import ReviewAdding from './Components/Dashboard/ReviewAdding/ReviewAdding';
+import ProductDetails from './Components/ProductDetails/ProductDetails';
 
 function App() {
     return (
@@ -29,13 +30,15 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/home" element={<Home />} >
-                    <Route path="allcategories" element={<AllCategories />} />
+                    <Route path="home" element={<AllCategories />} />
                     <Route path="furniture" element={<Furniture />} />
                     <Route path="clocks" element={<Clocks />} />
                     <Route path="lights" element={<Lights />} />
                     <Route path="toys" element={<Toys />} />
                     <Route path="accessories" element={<Accessories />} />
                 </Route>
+                <Route path="shop" element={<Shop />} />
+                <Route path="productdetails/:id" element={<ProductDetails />} />
                 <Route path="about" element={<About />} />
                 <Route path="contact" element={<Contact />} />
                 <Route path="dashboard" element={<Dashboard />}>
@@ -53,4 +56,3 @@ function App() {
 }
 
 export default App;
-

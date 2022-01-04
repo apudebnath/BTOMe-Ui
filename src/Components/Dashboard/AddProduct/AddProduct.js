@@ -30,7 +30,7 @@ const AddProduct = () => {
                             <div className="col-md-5">
 
                                 <select {...register("productCategory", { required: true })}>
-                                    <option value="" disabled selected hidden>Choose a Product Category</option>
+                                    <option value="">Choose a Product Category</option>
                                     <option value="Decoration Light">Decoration Light</option>
                                     <option value="Skin Care">Skin Care</option>
                                     <option value="Salwar Kameez">Salwar Kameez</option>

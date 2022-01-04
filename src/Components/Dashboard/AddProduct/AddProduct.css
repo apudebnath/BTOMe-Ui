@@ -7,6 +7,8 @@
     padding: 150px 0 100px;
     background-color: rgba(29, 25, 25, 0.6); 
     color: white;
+    /* color: #f46709;
+    color: #03153a; */
 }
 .add-product form{
     display: flex;

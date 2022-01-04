@@ -14,7 +14,7 @@ import { Button } from '@mui/material';
 import ButtonGroup from '@mui/material/ButtonGroup';
 
 
-const drawerWidth = 240;
+const drawerWidth = 300;
 
 function Dashboard(props) {
     const { window } = props;
@@ -27,10 +27,11 @@ function Dashboard(props) {
     const buttons = [
         <Button key="one"> <Link className='text-decoration-none' to="/dashboard"> Dashboard </Link></Button>,
         <Button key="two"><Link className='text-decoration-none' to="orders">Manage Orders </Link></Button>,
-        <Button key="three"><Link className='text-decoration-none' to="messages">Users Messages </Link></Button>,
+        <Button key="three"><Link className='text-decoration-none' to="review"> Give a Review </Link></Button>,
         <Button key="four"><Link className='text-decoration-none' to="addProduct">Add a Product</Link> </Button>,
         <Button key="five"><Link className='text-decoration-none' to="manageProducts">Manage Products </Link></Button>,
         <Button key="six"><Link className='text-decoration-none' to="makeAdmin">Make An Admin </Link></Button>,
+        <Button key="seven"><Link className='text-decoration-none' to="">Log Out </Link></Button>
     ];
 
     const drawer = (
@@ -42,18 +43,19 @@ function Dashboard(props) {
                     className="d-inline-block align-top" alt="B2Me logo" />
             </Link>
             <Divider />
-            <div className='py-5 ps-4'>
+            <div className='py-5 ps-auto' style={{ 'background-color': '#03153a' }}>
                 <ButtonGroup
                     orientation="vertical"
-                    aria-label="vertical contained button group"
+                    aria-label="large button group"
                     variant="outlined"
-                    sx={{ p: 3 }}
+                    size="large"
+                    sx={{ p: 1, backgroundColor: 'white' }}
                 >
                     {buttons}
                 </ButtonGroup>
             </div>
-            <Divider />
-        </div>
+            {/* <Divider /> */}
+        </div >
     );
 
     const container = window !== undefined ? () => window().document.body : undefined;
@@ -66,31 +68,32 @@ function Dashboard(props) {
                 sx={{
                     width: { sm: `calc(100% - ${drawerWidth}px)` },
                     ml: { sm: `${drawerWidth}px` },
+                    backgroundColor: '#03153a'
                 }}
             >
-                <Toolbar>
-                    <IconButton
-                        color="inherit"
-                        aria-label="open drawer"
-                        edge="start"
-                        onClick={handleDrawerToggle}
-                        sx={{ mr: 2, display: { sm: 'none' } }}
-                    >
-                        <MenuIcon />
-                    </IconButton>
-
+                {/* <Toolbar> */}
+                <IconButton
+                    color="inherit"
+                    aria-label="open drawer"
+                    edge="start"
+                    onClick={handleDrawerToggle}
+                    sx={{ mr: 2, display: { sm: 'none' } }}
+                >
+                    <MenuIcon />
+                </IconButton>
+                {/* 
                     <Typography variant="h6" noWrap component="div">
                         Dashboard
-                    </Typography>
+                    </Typography> */}
 
-                    {/* <Link to='/'>
+                {/* <Link to='/'>
                         <img src="../logo1.png"
                             width="150"
                             height="60"
                             className="d-inline-block align-top" alt="BToMe logo" />
                     </Link> */}
 
-                </Toolbar>
+                {/* </Toolbar> */}
             </AppBar>
 
             <Box

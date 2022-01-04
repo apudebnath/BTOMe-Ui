@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 const ProductDetails = () => {
     const {id} = useParams();
     const [product, setProduct] = useState({});
-    const [orderData, newOrderData] = useState({})
+    const [orderData, newOrderData] = useState({});
 
     // get data from database
     useEffect(() => {
@@ -28,7 +28,23 @@ const ProductDetails = () => {
         const orderInfo = {
             ...orderData,
             status: 'Pending',
+            price: product.productOfferPrice,
         }
+        console.log(orderInfo);
+        fetch('https://gentle-woodland-78175.herokuapp.com/add-order',{
+            method: 'POST',
+            headers:{
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(orderInfo)
+        })
+        .then(res => res.json())
+        .then(data => {
+            if(data.insertedId){
+                alert('Order Submit Successfully')
+            }
+        })
+        e.target.reset();
     }
     return (
         <Container sx={{py:5}}>
@@ -105,12 +121,11 @@ const ProductDetails = () => {
                                         <TextField
                                           sx={{width: '60%', mb:2}}
                                           required
-                                          label="Product Price"
+                                          label="Your City"
                                           id="outlined-size-small"
                                           size="small"
-                                          name="product price"
+                                          name="city"
                                           type="text"
-                                          defaultValue={product.productOfferPrice}
                                           onBlur={handleOnBlur}
                                           ></TextField>
                                         <Button type="submit" sx={{width: '60%',}}

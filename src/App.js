@@ -25,15 +25,18 @@ import ProductDetails from './Components/ProductDetails/ProductDetails';
 import Login from './Components/Login/Login/Login';
 import Registration from './Components/Login/Registration/Registration';
 import Payment from './Components/Payment/Payment';
+import AllProducts from './Components/Home/AllProducts/AllProducts';
+import Footer from './Components/Home/Footer/Footer';
+
 
 function App() {
     return (
         <div className="App">
             <MenuBar />
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/home" element={<Home />} >
-                    <Route path="home" element={<AllCategories />} />
+                <Route path="/home" element={<Home />} />
+                <Route path="/" element={<Home />} >
+                    <Route path="/" element={<AllCategories />} />
                     <Route path="furniture" element={<Furniture />} />
                     <Route path="clocks" element={<Clocks />} />
                     <Route path="lights" element={<Lights />} />
@@ -57,6 +60,7 @@ function App() {
                 </Route>
                 <Route path="*" element={<NotFound />} />
             </Routes>
+            
         </div>
     );
 }

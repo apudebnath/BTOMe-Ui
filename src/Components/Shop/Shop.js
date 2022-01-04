@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGreaterThan } from '@fortawesome/free-solid-svg-icons';
 const Shop = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
@@ -10,8 +11,15 @@ const Shop = () => {
         .then(data => setProducts(data))
     }, [])
     return (
-        <div className='mt-5 pt-3'>
-            <h2>Shop</h2>
+        <div className='my-5 pt-5'>
+            <div>
+                <h2 className=' border-bottom border-dark d-inline'>Shop</h2>
+                <h6 className='py-3'>
+                    <Link className="text-decoration-none text-black" to='/'> Home</Link>
+                    <FontAwesomeIcon className="mx-2" icon={faGreaterThan} size="xs" />
+                    <span className="text-secondary"> Shop </span>
+                </h6>
+            </div>
             <div className="container">
                 <div className="row row-cols-1 row-cols-md-4 g-4 text-start">
                     {

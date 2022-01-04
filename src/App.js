@@ -24,6 +24,8 @@ import ReviewAdding from './Components/Dashboard/ReviewAdding/ReviewAdding';
 import ProductDetails from './Components/ProductDetails/ProductDetails';
 import Login from './Components/Login/Login/Login';
 import Registration from './Components/Login/Registration/Registration';
+import AllProducts from './Components/Home/AllProducts/AllProducts';
+import Footer from './Components/Home/Footer/Footer';
 
 function App() {
     return (
@@ -32,7 +34,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/home" element={<Home />} >
-                    <Route path="home" element={<AllCategories />} />
+                    <Route path="/home" element={<AllCategories />} />
                     <Route path="furniture" element={<Furniture />} />
                     <Route path="clocks" element={<Clocks />} />
                     <Route path="lights" element={<Lights />} />
@@ -55,6 +57,7 @@ function App() {
                 </Route>
                 <Route path="*" element={<NotFound />} />
             </Routes>
+            <Footer/>
         </div>
     );
 }

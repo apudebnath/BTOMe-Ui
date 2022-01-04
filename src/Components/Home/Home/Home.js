@@ -16,11 +16,11 @@ const Home = () => {
             <FeaturedCategories></FeaturedCategories>
             <NewArrival></NewArrival>
             <SingleProductBanner></SingleProductBanner>
-            <AllProducts/>
-            <LatestNews/>
-            <NewsLetter/>
-            <SocialMedia/>
-            
+            <AllProducts />
+            <LatestNews />
+            <NewsLetter />
+            <SocialMedia />
+            <Footer />
         </div>
     );
 };

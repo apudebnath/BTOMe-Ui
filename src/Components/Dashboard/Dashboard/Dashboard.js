@@ -39,11 +39,11 @@ function Dashboard(props) {
             <Link to="/">
                 <img src="../logo1.png"
                     width="200"
-                    height="80"
+                    height="120"
                     className="d-inline-block align-top" alt="B2Me logo" />
             </Link>
             <Divider />
-            <div className='py-5 ps-auto' style={{ 'background-color': '#03153a' }}>
+            <div className='py-5 px-auto' style={{ 'backgroundColor': '#03153a' }}>
                 <ButtonGroup
                     orientation="vertical"
                     aria-label="large button group"
@@ -61,7 +61,6 @@ function Dashboard(props) {
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-        <>
         <Box className='body' sx={{ display: 'flex' }}>
             <CssBaseline />
             <AppBar
@@ -70,32 +69,32 @@ function Dashboard(props) {
                     width: { sm: `calc(100% - ${drawerWidth}px)` },
                     ml: { sm: `${drawerWidth}px` },
                     backgroundColor: '#03153a',
-                    paddingTop: '25px',
-                    paddingBottom: '25px'
+                    paddingTop: '20px',
+                    paddingBottom: '20px'
                 }}
             >
                 <Toolbar sx={{
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          p: 1,
-          m: 1,
-        }}>
-                <IconButton
-                    color="inherit"
-                    aria-label="open drawer"
-                    edge="start"
-                    onClick={handleDrawerToggle}
-                    sx={{ mr: 2, display: { sm: 'none' } }}
-                >
-                    <MenuIcon />
-                </IconButton>
-                
+                    display: 'flex',
+                    flexDirection: 'row',
+                    justifyContent: 'space-between',
+                    p: 1,
+                    m: 1,
+                }}>
+                    <IconButton
+                        color="inherit"
+                        aria-label="open drawer"
+                        edge="start"
+                        onClick={handleDrawerToggle}
+                        sx={{ mr: 2, display: { sm: 'none' } }}
+                    >
+                        <MenuIcon />
+                    </IconButton>
+
                     <Typography variant="h6" noWrap component="div">
                         Dashboard
                     </Typography>
 
-                {/* <Link to='/'>
+                    {/* <Link to='/'>
                         <img src="../logo1.png"
                             width="150"
                             height="60"
@@ -144,10 +143,10 @@ function Dashboard(props) {
 
                 <Outlet />
 
+                <Footer />
+
             </Box>
         </Box >
-        <Footer/>
-        </>
     );
 }
 

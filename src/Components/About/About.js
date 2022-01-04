@@ -5,6 +5,7 @@ import SocialMedia from './SocialMedia';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGreaterThan } from '@fortawesome/free-solid-svg-icons';
 import './About.css';
+import Footer from '../Home/Footer/Footer';
 
 const About = () => {
     return (
@@ -90,7 +91,7 @@ const About = () => {
             </div>
             {/* brand logo part */}
             <div>
-                <Row xs={2} sm={2} md={6} lg={6}>
+                <Row xs={2} sm={2} md={6} lg={6} className=''>
                     <img className='brand-logo' src="https://i.ibb.co/qjzvWPH/image.png" alt="" />
                     <img className='brand-logo' src="https://i.ibb.co/ZXVFKyb/image.png" alt="" />
                     <img className='brand-logo' src="https://i.ibb.co/ZVwtsk4/image.png" alt="" />
@@ -99,6 +100,7 @@ const About = () => {
                     <img className='brand-logo' src="https://i.ibb.co/qyf7y1Q/image.png" alt="" />
                 </Row>
             </div>
+            <Footer />
         </div>
     );
 };

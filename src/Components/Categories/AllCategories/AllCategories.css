@@ -1,0 +1,19 @@
+.single-product{
+    height: 400px;
+}
+.product-image{
+    height: 60%;
+    width: 100%;
+}
+.product-image img{
+    height: 100%;
+    width: 100%;
+}
+.product-info{
+    height: 40%;
+}
+.product-title{
+    height: 70%;
+    overflow: hidden;
+    font-size: 18px;
+}

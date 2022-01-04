@@ -24,8 +24,10 @@ import ReviewAdding from './Components/Dashboard/ReviewAdding/ReviewAdding';
 import ProductDetails from './Components/ProductDetails/ProductDetails';
 import Login from './Components/Login/Login/Login';
 import Registration from './Components/Login/Registration/Registration';
+import Payment from './Components/Payment/Payment';
 import AllProducts from './Components/Home/AllProducts/AllProducts';
 import Footer from './Components/Home/Footer/Footer';
+
 
 function App() {
     return (
@@ -50,6 +52,7 @@ function App() {
                 <Route path="dashboard" element={<Dashboard />}>
                     <Route path="/dashboard" element={<DashboardHome />} />
                     <Route path="orders" element={<Orders />} />
+                    <Route path="payment" element={<Payment />} />
                     <Route path="review" element={<ReviewAdding />} />
                     <Route path="addProduct" element={<AddProduct />} />
                     <Route path="manageProducts" element={<ManageProduct />} />

@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 import image from '../../../images/reg1.jpg';
+
 const Login = () => {
   return (
     <div className='container pt-5 mt-5'>
@@ -22,11 +23,11 @@ const Login = () => {
               <Form.Control type="password" placeholder="Password" />
             </Form.Group>
 
-            <Button className='px-5' variant="light" type="submit" className="w-100 mx-auto btn-outline-dark">
+            <Button className='px-5' variant="light" type="submit" className="w-100 fw-bold mx-auto btn-outline-dark">
               Login
             </Button>
             <br /><br />
-            <Button className='px-5' variant="light" type="submit" className="w-100 mx-auto btn-outline-danger"><FontAwesomeIcon icon={faGoogle} /> Sign In With Google
+            <Button className='px-5' variant="light" type="submit" className="w-100 fw-bold mx-auto btn-outline-danger"><FontAwesomeIcon icon={faGoogle} /> Sign In With Google
             </Button>
             <Button as={Link} to="/registration" variant="white" type="submit" className="fw-bold mt-4 w-100 mx-auto">Don't have an account?
             </Button>

@@ -26,11 +26,11 @@ const Registration = () => {
               <Form.Control type="password" placeholder="Password" />
             </Form.Group>
 
-            <Button className='px-5' variant="light" type="submit" className="w-100 mx-auto btn-outline-dark">
+            <Button className='px-5' variant="light" type="submit" className="w-100 fw-bold mx-auto btn-outline-dark">
               Register
             </Button>
             <br /><br />
-            <Button className='px-5' variant="light" type="submit" className="w-100 mx-auto btn-outline-danger">
+            <Button className='px-5' variant="light" type="submit" className="w-100 fw-bold mx-auto btn-outline-danger">
               <FontAwesomeIcon icon={faGoogle} /> Sign In With Google
             </Button>
             <Button as={Link} to="/login" variant="white" type="submit" className="fw-bold mt-4 w-100">Already have an account?

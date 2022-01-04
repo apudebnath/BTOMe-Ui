@@ -30,6 +30,7 @@ const AllProducts = () => {
                         <div className="row row-cols-1 row-cols-md-4 g-4 text-start">
                             {
                                 products.slice(0,8).map(product => <div key={product._id} className="col">
+                                    <Link to={`/productdetails/${product._id}`} style={{textDecoration: 'none'}}>
                                     <div className="card">
                                         <img src={product.productImage} className="card-img-top" alt="..." />
                                         <div className="card-body">
@@ -37,6 +38,7 @@ const AllProducts = () => {
                                             <p className="card-text text-success fw-bold">$130.00</p>
                                         </div>
                                     </div>
+                                    </Link>
                                 </div>)
                             }  
                         </div>

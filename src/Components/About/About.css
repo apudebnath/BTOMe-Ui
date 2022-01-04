@@ -1,7 +1,7 @@
 .brand-logo{
     background-color: silver;
     transition: width 0.5s;
-    width: auto;
+    /* width: fit-content; */
 }
 .brand-logo:hover{
     background-color: cadetblue;

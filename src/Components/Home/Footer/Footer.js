@@ -6,8 +6,8 @@ import credit from '../../../images/creditCard.png';
 import visa from '../../../images/visaCard.png';
 import paypal from '../../../images/paypalCard.png';
 
-const image =('https://i.ibb.co/swwrG3J/footerbaner.jpg')
-const backgroundB ={
+const image = ('https://i.ibb.co/swwrG3J/footerbaner.jpg')
+const backgroundB = {
     background: `url(${image})`,
     backgroundColor: 'rgba(1, 28, 38, 0.5)',
     backgroundBlendMode: 'multiply, luminosity',
@@ -30,7 +30,7 @@ const Footer = () => {
                                     className="d-inline-block align-top bg-white rounded" alt="B2Me logo" />
                                 <p className=' text-white pt-3'>BTOMe is one of the favorite shop for you, because we ensure quality and quick service.</p>
                                 <div className='py-2 social-media'>
-                                    <p className=' bg-white px-2 py-2 rounded'>
+                                    <p className='bg-white px-2 py-2 rounded'>
                                         <a href="https://www.facebook.com/"
                                             target="_blank" rel="noreferrer" className=''>
                                             <FontAwesomeIcon className="me-3 fs-4" icon={faFacebookF} size='2x' />
@@ -104,7 +104,7 @@ const Footer = () => {
                         <p>Copyright - &copy;{new Date().getFullYear()} All right reserved || <strong>- BTOMe</strong> </p>
                     </div>
                 </div>
-            
+
             </div>
         </div>
     );

@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGreaterThan } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './Contact.css';
+import Footer from '../Home/Footer/Footer';
 
 const Contact = () => {
     return (
@@ -137,11 +138,11 @@ const Contact = () => {
             <div className='text-start py-5'>
                 <Container>
                     <Row xs={1} sm={1} md={2} className='d-flex align-items-top justify-content-md-center g-5 my-5'>
-                        <Col className=''>
-                            {/* <iframe title='B2Me' width="524" height="408" frameBorder={0} scrolling="no" marginHeight={0} marginWidth={0} id="gmap_canvas" src="https://maps.google.com/maps?width=524&amp;height=408&amp;hl=en&amp;q=Mirpur%20Dhaka+(B2Me)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.symptoma.com/en/info/covid-19'>Corona Virus facts</a> */}
+                        <Col>
+                            <img className='w-100 h-100 rounded-3 border-5' src="https://i.ibb.co/qCxytX3/image.png" alt="" />
                         </Col>
 
-                        <Col className=''>
+                        <Col>
                             <h5>Get In Touch</h5>
 
                             {/* social media icons  */}
@@ -184,6 +185,7 @@ const Contact = () => {
             <div>
 
             </div>
+            <Footer />
         </div>
     );
 };

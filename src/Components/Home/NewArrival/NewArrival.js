@@ -20,15 +20,17 @@ const NewArrival = () => {
                 {
                     products.slice(0,4).map(product => <div key={product._id} className="col">
                         <Link to={`/productdetails/${product._id}`} style={{textDecoration: 'none'}}>
-                            <div className="card">
-                                <img src={product.productImage} className="card-img-top" alt="..." />
-                                <div className="card-body">
-                                    <h5 className="card-title ">bottle</h5>
-                                    <p className="card-text text-success fw-bold">$130.00</p>
-                                </div>
+                        <div className="card single-product">
+                            <div className='product-image'>
+                                <img src={product.productImage} className="card-img-top"  alt="..." />
                             </div>
-                            </Link>
-                        </div>)
+                            <div className="card-body product-info">
+                                <h5 className="card-title product-title ">{product.productName}</h5>
+                                <p className="card-text text-success fw-bold">$ {product.productMainPrice}</p>
+                            </div>
+                        </div>
+                        </Link>
+                    </div>)
                 }  
                 </div>
             </div>

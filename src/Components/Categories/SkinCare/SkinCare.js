@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Lights = () => {
+const SkinCare = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        const url='https://gentle-woodland-78175.herokuapp.com/all-products?category=Decoration Light'
+        const url='https://gentle-woodland-78175.herokuapp.com/all-products?category=Skin Care'
         fetch(url)
         .then(res => res.json())
         .then(data => setProducts(data))
     }, [])
     return (
         <div>
-            <h2>Lights</h2>
+            <h2>Toys</h2>
             <div className="container">
                 <div className="row row-cols-1 row-cols-md-4 g-4 text-start">
                     {
@@ -36,4 +36,4 @@ const Lights = () => {
     );
 };
 
-export default Lights;
+export default SkinCare;

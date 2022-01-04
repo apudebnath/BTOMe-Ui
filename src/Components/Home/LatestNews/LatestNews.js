@@ -1,5 +1,6 @@
 import React from 'react';
 import './LatestNews.css';
+
 const LatestNews = () => {
     return (
         <div className="pb-5 mb-5">

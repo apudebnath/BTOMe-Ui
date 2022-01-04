@@ -9,9 +9,9 @@ import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
-import { Button } from '@mui/material';
+import { Button, Typography } from '@mui/material';
 import ButtonGroup from '@mui/material/ButtonGroup';
-
+import Footer from '../../Home/Footer/Footer';
 
 const drawerWidth = 300;
 
@@ -60,6 +60,7 @@ function Dashboard(props) {
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
+        <>
         <Box className='body' sx={{ display: 'flex' }}>
             <CssBaseline />
             <AppBar
@@ -67,10 +68,18 @@ function Dashboard(props) {
                 sx={{
                     width: { sm: `calc(100% - ${drawerWidth}px)` },
                     ml: { sm: `${drawerWidth}px` },
-                    backgroundColor: '#03153a'
+                    backgroundColor: '#03153a',
+                    paddingTop: '25px',
+                    paddingBottom: '25px'
                 }}
             >
-                {/* <Toolbar> */}
+                <Toolbar sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          p: 1,
+          m: 1,
+        }}>
                 <IconButton
                     color="inherit"
                     aria-label="open drawer"
@@ -80,10 +89,10 @@ function Dashboard(props) {
                 >
                     <MenuIcon />
                 </IconButton>
-                {/* 
+                
                     <Typography variant="h6" noWrap component="div">
                         Dashboard
-                    </Typography> */}
+                    </Typography>
 
                 {/* <Link to='/'>
                         <img src="../logo1.png"
@@ -92,7 +101,7 @@ function Dashboard(props) {
                             className="d-inline-block align-top" alt="BToMe logo" />
                     </Link> */}
 
-                {/* </Toolbar> */}
+                </Toolbar>
             </AppBar>
 
             <Box
@@ -136,6 +145,8 @@ function Dashboard(props) {
 
             </Box>
         </Box >
+        <Footer/>
+        </>
     );
 }
 

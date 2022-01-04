@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
 const Furniture = () => {
-    /* const [products, setProducts] = useState([])
+    const [products, setProducts] = useState([]);
 
-    useEffect(() => {
-        const url=(`https://gentle-woodland-78175.herokuapp.com/allproducts?category=${Furniture}`)
+/*     useEffect(() => {
+        const url='https://gentle-woodland-78175.herokuapp.com/all-products?category={Furniture}'
         fetch(url)
         .then(res => res.json())
         .then(data => setProducts(data))

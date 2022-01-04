@@ -26,11 +26,12 @@ function Dashboard(props) {
     const buttons = [
         <Button key="one"> <Link className='text-decoration-none' to="/dashboard"> Dashboard </Link></Button>,
         <Button key="two"><Link className='text-decoration-none' to="orders">Manage Orders </Link></Button>,
-        <Button key="three"><Link className='text-decoration-none' to="review"> Give a Review </Link></Button>,
-        <Button key="four"><Link className='text-decoration-none' to="addProduct">Add a Product</Link> </Button>,
-        <Button key="five"><Link className='text-decoration-none' to="manageProducts">Manage Products </Link></Button>,
-        <Button key="six"><Link className='text-decoration-none' to="makeAdmin">Make An Admin </Link></Button>,
-        <Button key="seven"><Link className='text-decoration-none' to="">Log Out </Link></Button>
+        <Button key="three"><Link className='text-decoration-none' to="payment">Payment </Link></Button>,
+        <Button key="four"><Link className='text-decoration-none' to="review"> Give a Review </Link></Button>,
+        <Button key="five"><Link className='text-decoration-none' to="addProduct">Add a Product</Link> </Button>,
+        <Button key="six"><Link className='text-decoration-none' to="manageProducts">Manage Products </Link></Button>,
+        <Button key="seven"><Link className='text-decoration-none' to="makeAdmin">Make An Admin </Link></Button>,
+        <Button key="eight"><Link className='text-decoration-none' to="">Log Out </Link></Button>
     ];
 
     const drawer = (

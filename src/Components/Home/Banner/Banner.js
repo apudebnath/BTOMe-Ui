@@ -15,6 +15,7 @@ const Banner = () => {
         };
     return (
 
+
         <div className="body container mt-5 ">
             <Slider {...settings}>
             <div>

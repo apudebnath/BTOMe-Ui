@@ -13,7 +13,7 @@ const Shop = () => {
     }, [])
     return (
         <>
-            <div className='my-5 pt-5'>
+            <div className='text-center my-5 pt-5'>
                 <div>
                     <h2 className=' border-bottom border-dark d-inline'>Shop</h2>
                     <h6 className='py-3'>

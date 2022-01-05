@@ -6,7 +6,7 @@ const Banner = () => {
 
     return (
 
-        <div className="body container mt-5 ">
+        <div className="container mt-5">
             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active">

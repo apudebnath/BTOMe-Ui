@@ -2,9 +2,9 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGreaterThan } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-const blogImage=('https://i.ibb.co/yRfcQSK/blogi7.jpg')
-const image=('https://i.ibb.co/1s77N0Z/newsletter-1500x500.jpg')
-const backgroundB ={
+const blogImage = ('https://i.ibb.co/yRfcQSK/blogi7.jpg')
+const image = ('https://i.ibb.co/1s77N0Z/newsletter-1500x500.jpg')
+const backgroundB = {
     background: `url(${image})`,
     backgroundColor: 'rgba(1, 28, 38, 0.5)',
     backgroundBlendMode: 'multiply, luminosity',
@@ -15,7 +15,7 @@ const backgroundB ={
 }
 const Blog = () => {
     return (
-        <div className='my-5 pt-5'>
+        <div className='text-center my-5 pt-5'>
             <div style={backgroundB} className='text-white py-5'>
                 <h2 className='pt-5'>You Can Konw More with Our Blog</h2>
                 <h6 className='pt-3 pb-5'>
@@ -25,12 +25,12 @@ const Blog = () => {
                 </h6>
             </div>
             <div className="container">
-            <h3 className='text-start pt-3'>Inspirational thinking and trends. These Chic 2022 Bag Trends Should Definitely Be on Your Radar </h3>
-            <p className='text-start'>Presented by- T.Rimni</p>
+                <h3 className='text-start pt-3'>Inspirational thinking and trends. These Chic 2022 Bag Trends Should Definitely Be on Your Radar </h3>
+                <p className='text-start'>Presented by- T.Rimni</p>
                 <div className="row row-cols-1 row-cols-md-2 g-4 text-start">
                     <div className="col">
                         <div className=''>
-                            <img src={blogImage} className="card-img-top"  alt="..." />
+                            <img src={blogImage} className="card-img-top" alt="..." />
                         </div>
                     </div>
                     <div className="col">
@@ -46,7 +46,7 @@ const Blog = () => {
                 <div className="row row-cols-1 row-cols-md-1 g-4 text-start">
                     <div>
                         <p>What's your need?
-                            Before buying your bag you must ask yourself for what do you need it for? Will it be your everyday bag? Or will you use just on special ocasions? Do you need to carry your laptop and books? Or just to carry all your essentials? Do you carry a look of things making it useful if the bag has extra pockets to make it easy to search for things like your phone and keys? 
+                            Before buying your bag you must ask yourself for what do you need it for? Will it be your everyday bag? Or will you use just on special ocasions? Do you need to carry your laptop and books? Or just to carry all your essentials? Do you carry a look of things making it useful if the bag has extra pockets to make it easy to search for things like your phone and keys?
                             <br />
                             When choosing your bag you must know for what you will use it, keeping in mind all of these things it will be much easier for you to choose the right bag.</p>
                     </div>

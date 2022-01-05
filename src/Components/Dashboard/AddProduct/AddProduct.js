@@ -17,7 +17,7 @@ const AddProduct = () => {
     };
 
     return (
-        <div>
+        <div className='text-center'>
             <div className="add-product">
                 <div className="bg-add-product mx-auto">
                     <h2>Add a Product</h2>
@@ -71,7 +71,7 @@ const AddProduct = () => {
 
                         </div>
 
-                        <input type="submit" value="Add" className="btn-outline-primary w-50" />
+                        <input type="submit" value="Add" className="btn-outline-dark w-50" />
                     </form>
 
                 </div>

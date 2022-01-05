@@ -12,27 +12,18 @@ import Toolbar from '@mui/material/Toolbar';
 import { Button, Typography } from '@mui/material';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Footer from '../../Home/Footer/Footer';
+import UseFirebaseAuth from '../../../customhook/UseFirebaseAuth';
 
 const drawerWidth = 300;
 
 function Dashboard(props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
+    const { user, admin, logOut } = UseFirebaseAuth();
 
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
     };
-
-    const buttons = [
-        <Button key="one"> <Link className='text-decoration-none' to="/dashboard"> Dashboard </Link></Button>,
-        <Button key="two"><Link className='text-decoration-none' to="orders">Manage Orders </Link></Button>,
-        <Button key="three"><Link className='text-decoration-none' to="payment">Payment </Link></Button>,
-        <Button key="four"><Link className='text-decoration-none' to="review"> Give a Review </Link></Button>,
-        <Button key="five"><Link className='text-decoration-none' to="addProduct">Add a Product</Link> </Button>,
-        <Button key="six"><Link className='text-decoration-none' to="manageProducts">Manage Products </Link></Button>,
-        <Button key="seven"><Link className='text-decoration-none' to="makeAdmin">Make An Admin </Link></Button>,
-        <Button key="eight"><Link className='text-decoration-none' to="">Log Out </Link></Button>
-    ];
 
     const drawer = (
         <div>
@@ -51,17 +42,45 @@ function Dashboard(props) {
                     size="large"
                     sx={{ p: 1, backgroundColor: 'white' }}
                 >
-                    {buttons}
+                    <Button>
+                        <Link className='text-decoration-none' to="/dashboard" > Dashboard </Link ></Button >,
+                    {admin &&
+                        <>
+                            <Button>
+                                <Link className='text-decoration-none' to="orders">Manage Orders </Link>
+                            </Button>
+                            <Button>
+                                <Link className='text-decoration-none' to="addProduct">Add a Product</Link>
+                            </Button>
+                            <Button>
+                                <Link className='text-decoration-none' to="manageProducts">Manage Products </Link>
+                            </Button>
+                            <Button>
+                                <Link className='text-decoration-none' to="makeAdmin">Make An Admin </Link>
+                            </Button>
+                        </>
+                    }
+                    {!admin &&
+                        <Button>
+                            <Link className='text-decoration-none' to="review"> Give a Review </Link>
+                        </Button>
+                    }
+                    <Button>
+                        <Link className='text-decoration-none' to="payment">Payment </Link>
+                    </Button>
+                    <Button>
+                        <Link onClick={logOut} className='text-decoration-none'>Log Out </Link>
+                    </Button>
                 </ButtonGroup>
             </div>
-            {/* <Divider /> */}
+            <Divider />
         </div >
     );
 
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-        <Box className='body' sx={{ display: 'flex' }}>
+        <Box className='text-center' sx={{ display: 'flex' }}>
             <CssBaseline />
             <AppBar
                 position="fixed"
@@ -151,10 +170,6 @@ function Dashboard(props) {
 }
 
 Dashboard.propTypes = {
-    /**
-     * Injected by the documentation to work in an iframe.
-     * You won't need it on your project.
-     */
     window: PropTypes.func,
 };
 

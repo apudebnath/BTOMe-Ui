@@ -7,7 +7,7 @@ import UseFirebaseAuth from '../../../customhook/UseFirebaseAuth';
 
 const MenuBar = () => {
 
-    const { user, admin } = UseFirebaseAuth();
+    const { user, logOut } = UseFirebaseAuth();
 
     return (
         <div>
@@ -41,10 +41,13 @@ const MenuBar = () => {
                             </Nav.Link>
 
 
-                            {user?.email || admin ?
+                            {user?.email ?
                                 <>
                                     <Nav.Link as={Link} className='fw-bold' to="/dashboard">
                                         <FontAwesomeIcon className="mx-2" icon={faUser} size='1x' /> Dashboard
+                                    </Nav.Link>
+
+                                    <Nav.Link onClick={logOut}> Log Out
                                     </Nav.Link>
                                 </>
                                 :

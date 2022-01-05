@@ -18,7 +18,7 @@ const backgroundB = {
 }
 const Footer = () => {
     return (
-        <div style={backgroundB} className='bg-secondary pt-5'>
+        <div style={backgroundB} className='text-center bg-secondary pt-5'>
             <div className='container'>
                 <div className="row">
                     <div className="col-12">

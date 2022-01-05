@@ -22,12 +22,13 @@ const Banner = () => {
                 <div className="row row-cols-1 row-cols-md-2 g-4">
                     <div className="col d-flex align-items-center">
                         <div className='text-center'> 
-                            <h4>CAPPELLINI</h4>
-                            <h2>Wooden Lounge Chairs</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt placeat </p>
+                            <h4>WOODLAND</h4>
+                            <h2>Wooden Special Chairs</h2>
+                            <p>This is specially formed wooden chair with special offers.</p>
+                            <p className='fs-1 text-success'>25% off</p>
                         </div>
                     </div>
-                    <div className="col">
+                    <div className="col d-flex justify-content-center">
                         <div className='w-75'>
                             <img src="https://i.ibb.co/HD8rgCm/banner1.png" className="card-img-top w"  alt="..." />
                         </div>
@@ -38,12 +39,13 @@ const Banner = () => {
                 <div className="row row-cols-1 row-cols-md-2 g-4">
                     <div className="col d-flex align-items-center">
                         <div className='text-center'> 
-                            <h4>CAPPELLINI</h4>
-                            <h2>Wooden Lounge Chairs</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt placeat </p>
+                            <h4>DIALERY</h4>
+                            <h2>Diamond Jewelry</h2>
+                            <p>Our gorgeous Jewelry collection for your happy moments. </p>
+                            <p className='fs-1 text-success'>15% off</p>
                         </div>
                     </div>
-                    <div className="col">
+                    <div className="col d-flex justify-content-center">
                         <div className='w-75'>
                             <img src="https://i.ibb.co/7r4rxfM/banner2.png" className="card-img-top w"  alt="..." />
                         </div>
@@ -54,14 +56,15 @@ const Banner = () => {
                 <div className="row row-cols-1 row-cols-md-2 g-4">
                     <div className="col d-flex align-items-center">
                         <div className='text-center'> 
-                            <h4>CAPPELLINI</h4>
-                            <h2>Wooden Lounge Chairs</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt placeat </p>
+                            <h4>WOODLAMP</h4>
+                            <h2>Wooden Lighting Collection</h2>
+                            <p>Exclusive wood based lighting collection for your home decore. </p>
+                            <p className='fs-1 text-success'>30% off</p>
                         </div>
                     </div>
-                    <div className="col">
-                        <div className='w-75'>
-                            <img src="https://i.ibb.co/19tY8HK/banner3.png" className="card-img-top"  alt="..." />
+                    <div className="col d-flex justify-content-center">
+                        <div className='w-75 '>
+                            <img src="https://i.ibb.co/19tY8HK/banner3.png" className="card-img-top "  alt="..." />
                         </div>
                     </div> 
                 </div>

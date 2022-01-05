@@ -107,10 +107,9 @@ const Registration = () => {
               </div>
 
               <Button
-                className='px-5'
                 variant="light"
                 type="submit"
-                className="w-100 fw-bold mx-auto btn-outline-dark"
+                className="px-5 w-100 fw-bold mx-auto btn-outline-dark"
               >
                 Register
               </Button>

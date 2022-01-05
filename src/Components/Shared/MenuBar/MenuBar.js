@@ -31,19 +31,21 @@ const MenuBar = () => {
                             <Nav.Link as={Link} to="/about" className="me-2 fw-bold">About</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link as={Link} to="/search" className="me-2">
+                            {/* <Nav.Link as={Link} to="/search" className="me-2">
                                 <FontAwesomeIcon className="mx-2" icon={faSearch} size='1x' />
-                            </Nav.Link>
-                            <Nav.Link as={Link} to="/cart" className="me-2 ">
+                            </Nav.Link> */}
+                            <FontAwesomeIcon className="mx-2 mt-3" icon={faSearch} size='1x' />
+                            <FontAwesomeIcon className="mx-2 mt-3" icon={faShoppingCart} size='1x' />
+                            {/* <Nav.Link as={Link} to="/cart" className="me-2 ">
 
                                 <FontAwesomeIcon className="mx-2" icon={faShoppingCart} size='1x' />
 
-                            </Nav.Link>
+                            </Nav.Link> */}
 
 
                             {user?.email ?
                                 <>
-                                    <Nav.Link as={Link} className='fw-bold' to="/dashboard">
+                                    <Nav.Link as={Link} className='fw-bold' to="dashboard">
                                         <FontAwesomeIcon className="mx-2" icon={faUser} size='1x' /> Dashboard
                                     </Nav.Link>
 
@@ -51,11 +53,11 @@ const MenuBar = () => {
                                     </Nav.Link>
                                 </>
                                 :
-                                <Nav.Link as={Link} to="/login">
+                                <Nav.Link as={Link} to="login">
                                     <FontAwesomeIcon className="mx-2" icon={faUser} size='1x' />
                                 </Nav.Link>
                             }
-
+                            
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

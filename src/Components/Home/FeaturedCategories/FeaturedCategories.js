@@ -62,4 +62,4 @@ const FeaturedCategories = () => {
     );
 };
 
-export default FeaturedCategories;
+export default FeaturedCategories;  

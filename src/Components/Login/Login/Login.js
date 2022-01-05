@@ -71,11 +71,11 @@ const Login = () => {
                 </div>
               </div>
 
-              <Button className='px-5' variant="light" type="submit" className="w-100 fw-bold mx-auto btn-outline-dark">
+              <Button  variant="light" type="submit" className=" px-5 w-100 fw-bold mx-auto btn-outline-dark">
                 Login
               </Button>
               <br /><br />
-              <Button className='px-5' variant="light" type="submit" className="w-100 fw-bold mx-auto btn-outline-danger"><FontAwesomeIcon icon={faGoogle} /> Sign In With Google
+              <Button variant="light" type="submit" className="px-5 w-100 fw-bold mx-auto btn-outline-danger"><FontAwesomeIcon icon={faGoogle} /> Sign In With Google
               </Button>
               <Button as={Link} to="/registration" variant="white" type="submit" className="fw-bold mt-4 w-100 mx-auto">Don't have an account?
               </Button>

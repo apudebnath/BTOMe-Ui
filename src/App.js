@@ -13,8 +13,7 @@ import Shop from './Components/Shop/Shop';
 import Furniture from './Components/Categories/Furniture/Furniture';
 import Clocks from './Components/Categories/Clocks/Clocks';
 import Lights from './Components/Categories/Lights/Lights';
-import Toys from './Components/Categories/Toys/Toys';
-import Accessories from './Components/Categories/Accessories/Accessories';
+import Jewelry from './Components/Categories/Jewelry/Jewelry';
 import AllCategories from './Components/Categories/AllCategories/AllCategories';
 import NotFound from './Components/NotFound/NotFound';
 import MenuBar from './Components/Shared/MenuBar/MenuBar';
@@ -33,63 +32,64 @@ import Blog from './Components/Blog/Blog';
 import FirebaseProvider from './context/FirebaseProvider';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import AdminPrivateRoute from './PrivateRoute/AdminPrivateRoute';
+import SkinCare from './Components/Categories/SkinCare/SkinCare';
 
 function App() {
     return (
         <FirebaseProvider>
             <Router>
-                <MenuBar />
-                <Routes>
-                    <Route path="home" element={<Home />} />
-                    <Route path="/" element={<Home />} >
-                        <Route path="/" element={<AllCategories />} />
-                        <Route path="furniture" element={<Furniture />} />
-                        <Route path="clocks" element={<Clocks />} />
-                        <Route path="lights" element={<Lights />} />
-                        <Route path="toys" element={<Toys />} />
-                        <Route path="accessories" element={<Accessories />} />
-                    </Route>
-                    <Route path="shop" element={<Shop />} />
-                    <Route path="blog" element={<Blog />} />
-                    <Route path="productdetails/:id" element={<ProductDetails />} />
-                    <Route path="about" element={<About />} />
-                    <Route path="contact" element={<Contact />} />
-                    <Route path="login" element={<Login />} />
-                    <Route path="registration" element={<Registration />} />
-                    <Route path="dashboard" element={<PrivateRoute>
-                        <Dashboard />
-                    </PrivateRoute>}>
-                        <Route path="/dashboard" element={<AdminPrivateRoute>
-                            <DashboardHome />
-                        </AdminPrivateRoute>} />
-                        <Route path="orders" element={<AdminPrivateRoute>
-                            <Orders />
-                        </AdminPrivateRoute>} />
-                        <Route path="payment" element={
-                            <AdminPrivateRoute>
-                                <Payment />
-                            </AdminPrivateRoute>
-                        } />
-                        <Route path="review" element={
-                            <AdminPrivateRoute>
-                                <ReviewAdding />
-                            </AdminPrivateRoute>
-                        } />
-                        <Route path="addProduct" element={
-                            <AdminPrivateRoute>
-                                <AddProduct />
-                            </AdminPrivateRoute>
-                        } />
-                        <Route path="manageProducts" element={<AdminPrivateRoute>
-                            <ManageProduct />
-                        </AdminPrivateRoute>} />
-                        <Route path="makeAdmin" element={<AdminPrivateRoute>
-                            <MakeAdmin />
-                        </AdminPrivateRoute>} />
-                    </Route>
-                    <Route path="*" element={<NotFound />} />
-                </Routes>
-            </Router>
+            <MenuBar/>
+            <Routes>
+                <Route path="home" element={<Home />} />
+                <Route path="/" element={<Home />} >
+                    <Route path="/" element={<AllCategories />} />
+                    <Route path="furniture" element={<Furniture />} />
+                    <Route path="clocks" element={<Clocks />} />
+                    <Route path="lights" element={<Lights />} />
+                    <Route path="skincare" element={<SkinCare />} />
+                    <Route path="jewelry" element={<Jewelry />} />
+                </Route>
+                <Route path="shop" element={<Shop />} />
+                <Route path="blog" element={<Blog />} />
+                <Route path="productdetails/:id" element={<ProductDetails />} />
+                <Route path="about" element={<About />} />
+                <Route path="contact" element={<Contact />} />
+                <Route path="login" element={<Login />} />
+                <Route path="registration" element={<Registration />} />
+                <Route path="dashboard" element={<PrivateRoute>
+                    <Dashboard />
+                </PrivateRoute>}>
+                    <Route path="/dashboard" element={<AdminPrivateRoute>
+                        <DashboardHome />
+                    </AdminPrivateRoute>} />
+                    <Route path="orders" element={<AdminPrivateRoute>
+                        <Orders />
+                    </AdminPrivateRoute>} />
+                    <Route path="payment" element={
+                        <AdminPrivateRoute>
+                            <Payment />
+                        </AdminPrivateRoute>
+                    } />
+                    <Route path="review" element={
+                        <AdminPrivateRoute>
+                            <ReviewAdding />
+                        </AdminPrivateRoute>
+                    } />
+                    <Route path="addProduct" element={
+                        <AdminPrivateRoute>
+                            <AddProduct />
+                        </AdminPrivateRoute>
+                    } />
+                    <Route path="manageProducts" element={<AdminPrivateRoute>
+                        <ManageProduct />
+                    </AdminPrivateRoute>} />
+                    <Route path="makeAdmin" element={<AdminPrivateRoute>
+                        <MakeAdmin />
+                    </AdminPrivateRoute>} />
+                </Route>
+                <Route path="*" element={<NotFound />} />
+            </Routes>
+        </Router>
         </FirebaseProvider>
     );
 }

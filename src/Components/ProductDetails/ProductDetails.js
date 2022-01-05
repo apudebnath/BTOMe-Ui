@@ -6,7 +6,7 @@ import Footer from '../Home/Footer/Footer';
 const ProductDetails = () => {
     const { id } = useParams();
     const [product, setProduct] = useState({});
-    const [orderData, newOrderData] = useState({})
+    const [orderData, newOrderData] = useState({});
 
     // get data from database
     useEffect(() => {
@@ -29,7 +29,23 @@ const ProductDetails = () => {
         const orderInfo = {
             ...orderData,
             status: 'Pending',
+            price: product.productOfferPrice,
         }
+        console.log(orderInfo);
+        fetch('https://gentle-woodland-78175.herokuapp.com/add-order',{
+            method: 'POST',
+            headers:{
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(orderInfo)
+        })
+        .then(res => res.json())
+        .then(data => {
+            if(data.insertedId){
+                alert('Order Submit Successfully')
+            }
+        })
+        e.target.reset();
     }
     return (
         <>
@@ -56,78 +72,77 @@ const ProductDetails = () => {
                                     </Card>
                                 </Box>
                             </Grid>
-                            <Grid item xs={12} sm={12} md={6} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                <Box >
-                                    <Card variant="outlined" square sx={{ m: 5, pb: 5, borderRadius: 2 }} style={{ background: 'rgba(165, 189, 204, 0.2)' }}>
-                                        <Typography variant="h5" sx={{ pt: 4 }}>Proceed to Order</Typography>
-                                        <hr />
-                                        <form onSubmit={handleOrderSubmit}>
-                                            <TextField
-                                                sx={{ width: '60%', mb: 2 }}
-                                                required
-                                                label="Your Name"
-                                                id="outlined-size-small"
-                                                size="small"
-                                                name="name"
-                                                type="text"
-                                                DefaultValue=""
-                                                onBlur={handleOnBlur}
-                                            ></TextField>
-                                            <TextField
-                                                sx={{ width: '60%', mb: 2 }}
-                                                required
-                                                label="Your Email"
-                                                id="outlined-size-small"
-                                                size="small"
-                                                name="email"
-                                                type="email"
-                                                DefaultValue=""
-                                                onBlur={handleOnBlur}
-                                            ></TextField>
-                                            <TextField
-                                                sx={{ width: '60%', mb: 2 }}
-                                                required
-                                                label="Your Phone Number"
-                                                id="outlined-size-small"
-                                                size="small"
-                                                name="phone"
-                                                type="text"
-                                                onBlur={handleOnBlur}
-                                            ></TextField>
-                                            <TextField
-                                                sx={{ width: '60%', mb: 2 }}
-                                                required
-                                                label="Your Address"
-                                                id="outlined-size-small"
-                                                size="small"
-                                                name="address"
-                                                type="text"
-                                                onBlur={handleOnBlur}
-                                            ></TextField>
-                                            <TextField
-                                                sx={{ width: '60%', mb: 2 }}
-                                                required
-                                                label="Product Price"
-                                                id="outlined-size-small"
-                                                size="small"
-                                                name="product price"
-                                                type="text"
-                                                defaultValue={product.productOfferPrice}
-                                                onBlur={handleOnBlur}
-                                            ></TextField>
-                                            <Button type="submit" sx={{ width: '60%', }}
-                                                variant='contained'
-                                                style={{ background: '#f46709' }}>Purchase</Button>
-                                        </form>
-                                    </Card>
-                                </Box>
-                            </Grid>
+                        <Grid item xs={12} sm={12} md={6} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                            <Box >
+                                <Card variant="outlined" square sx={{m:5, pb: 5, borderRadius: 2}} style={{background: 'rgba(165, 189, 204, 0.2)'}}>
+                                    <Typography variant="h5" sx={{pt: 4}}>Proceed to Order</Typography>
+                                    <hr />
+                                    <form onSubmit={handleOrderSubmit}>
+                                        <TextField
+                                          sx={{width: '60%', mb:2}}
+                                          required
+                                          label="Your Name"
+                                          id="outlined-size-small"
+                                          size="small"
+                                          name="name"
+                                          type="text"
+                                          DefaultValue=""
+                                          onBlur={handleOnBlur}
+                                          ></TextField>
+                                        <TextField
+                                          sx={{width: '60%', mb:2}}
+                                          required
+                                          label="Your Email"
+                                          id="outlined-size-small"
+                                          size="small"
+                                          name="email"
+                                          type="email"
+                                          DefaultValue=""
+                                          onBlur={handleOnBlur}
+                                          ></TextField>
+                                        <TextField
+                                          sx={{width: '60%', mb:2}}
+                                          required
+                                          label="Your Phone Number"
+                                          id="outlined-size-small"
+                                          size="small"
+                                          name="phone"
+                                          type="text"
+                                          onBlur={handleOnBlur}
+                                          ></TextField>
+                                        <TextField
+                                          sx={{width: '60%', mb:2}}
+                                          required
+                                          label="Your Address"
+                                          id="outlined-size-small"
+                                          size="small"
+                                          name="address"
+                                          type="text"
+                                          onBlur={handleOnBlur}
+                                          ></TextField>
+                                        <TextField
+                                          sx={{width: '60%', mb:2}}
+                                          required
+                                          label="Your City"
+                                          id="outlined-size-small"
+                                          size="small"
+                                          name="city"
+                                          type="text"
+                                          onBlur={handleOnBlur}
+                                          ></TextField>
+                                        <Button type="submit" sx={{width: '60%',}}
+                                            variant='contained'
+                                            style={{background: '#f46709'}}>Purchase</Button> 
+                                    </form>
+                                </Card>
+                            </Box>
                         </Grid>
-                    </Card>
-                </Box>
-            </Container>
-            <Footer />
-        </>
+                    </Grid>
+                </Card>
+            </Box>
+        </Container>
+      <Footer />
+     </>
     );
 };
 

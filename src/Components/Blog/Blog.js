@@ -25,8 +25,9 @@ const Blog = () => {
                 </h6>
             </div>
             <div className="container">
-                <h3 className='text-start pt-3'>Inspirational thinking and trends. These Chic 2022 Bag Trends Should Definitely Be on Your Radar </h3>
-                <p className='text-start'>Presented by- T.Rimni</p>
+            <h3 className='text-start pt-3'>Inspirational thinking and trends. These Chic 2022 Bag Trends Should Definitely Be on Your Radar </h3>
+            <p className='text-start'>Presented by- A.Debnath</p>
+
                 <div className="row row-cols-1 row-cols-md-2 g-4 text-start">
                     <div className="col">
                         <div className=''>

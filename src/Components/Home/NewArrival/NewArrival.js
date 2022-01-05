@@ -13,7 +13,7 @@ const NewArrival = () => {
         <div className="pb-5">
             <div className="text-center mt-5 pt-5">
                 <h3 className="pt-5">-New Arrival-</h3>
-                <p className="pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Architecto fugit error hic ipsa id</p>
+                <p className="pb-3">We always collect newest style and upto date fashion. <br /> Stay with us and enjoy update style</p>
             </div>
             <div className="container">
                 <div className="row row-cols-1 row-cols-md-4 g-4 text-start">

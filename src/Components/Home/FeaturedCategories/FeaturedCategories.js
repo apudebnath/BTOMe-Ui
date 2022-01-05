@@ -12,7 +12,7 @@ const FeaturedCategories = () => {
             <Container>
                 <Row>
                     <Col sm={6}>
-                        <div className="img-hover-zoom"> <img src="https://z9d7c4u6.rocketcdn.me/wp-content/uploads/2016/09/furniture10_2-430x490.jpg.webp" className="w-100" alt="" /></div>
+                        <div className="img-hover-zoom"> <img src="https://i.ibb.co/fp1GQCf/category-Furniture.jpg" className="w-100" alt="" /></div>
                         <div className="text-start ">
                             <h4>Furniture</h4>
                         </div>
@@ -21,7 +21,7 @@ const FeaturedCategories = () => {
                         <Row>
                             <Col sm>
                                 <div className="img-hover-zoom">
-                                    <img src="https://z9d7c4u6.rocketcdn.me/wp-content/uploads/2017/03/clock12_1.jpg" className="w-100" alt="" />
+                                    <img src="https://i.ibb.co/NjwZrGX/category-Clock.jpg" className="w-100" alt="" />
                                 </div>
                                 <div className="text-start ">
                                     <h4> Clocks</h4>
@@ -29,7 +29,7 @@ const FeaturedCategories = () => {
                             </Col>
                             <Col sm>
                                 <div className="img-hover-zoom">
-                                    <img src="https://z9d7c4u6.rocketcdn.me/wp-content/uploads/2016/09/light4.-700x800.jpg.webp" className="w-100" alt="" />
+                                    <img src="https://i.ibb.co/grcMkyy/category-Light.jpg" className="w-100" alt="" />
                                 </div>
                                 <div className="text-start ">
                                     <h4>Lighting</h4>
@@ -39,18 +39,18 @@ const FeaturedCategories = () => {
                         <Row>
                             <Col sm>
                                 <div className="img-hover-zoom">
-                                    <img src="https://z9d7c4u6.rocketcdn.me/wp-content/uploads/2016/09/toys10_3-430x490.jpg" className="w-100" alt="" />
+                                    <img src="https://i.ibb.co/HY9zc4v/categortoy.jpg" className="w-100" alt="" />
                                 </div>
                                 <div className="text-start ">
-                                    <h4>Toys</h4>
+                                    <h4>Jewelry</h4>
                                 </div>
                             </Col>
                             <Col sm>
                                 <div className="img-hover-zoom">
-                                    <img src="https://z9d7c4u6.rocketcdn.me/wp-content/uploads/2016/09/cooking12_2-700x800.jpg.webp" className="w-100" alt="" />
+                                    <img src="https://i.ibb.co/qnX0gyC/category-Skincare.jpg" className="w-100" alt="" />
                                 </div>
                                 <div className="text-start ">
-                                    <h4>Accessories</h4>
+                                    <h4>Skin Care</h4>
                                 </div>
                             </Col>
                         </Row>

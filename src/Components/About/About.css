@@ -3,6 +3,9 @@
     transition: width 0.5s;
     /* width: fit-content; */
 }
+.section-bg{
+    background-color: rgb(147, 153, 153); 
+}
 .brand-logo:hover{
     background-color: cadetblue;
     width: 200px;

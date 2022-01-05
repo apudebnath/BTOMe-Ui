@@ -90,7 +90,7 @@ const About = () => {
                 </Container>
             </div>
             {/* brand logo part */}
-            <div>
+            <div className='section-bg'>
                 <Row xs={2} sm={2} md={6} lg={6} className=''>
                     <img className='brand-logo' src="https://i.ibb.co/qjzvWPH/image.png" alt="" />
                     <img className='brand-logo' src="https://i.ibb.co/ZXVFKyb/image.png" alt="" />

@@ -55,37 +55,14 @@ function App() {
                 <Route path="about" element={<About />} />
                 <Route path="contact" element={<Contact />} />
                 <Route path="login" element={<Login />} />
-                <Route path="registration" element={<Registration />} />
-                <Route path="dashboard" element={<PrivateRoute>
-                    <Dashboard />
-                </PrivateRoute>}>
-                    <Route path="/dashboard" element={<AdminPrivateRoute>
-                        <DashboardHome />
-                    </AdminPrivateRoute>} />
-                    <Route path="orders" element={<AdminPrivateRoute>
-                        <Orders />
-                    </AdminPrivateRoute>} />
-                    <Route path="payment" element={
-                        <AdminPrivateRoute>
-                            <Payment />
-                        </AdminPrivateRoute>
-                    } />
-                    <Route path="review" element={
-                        <AdminPrivateRoute>
-                            <ReviewAdding />
-                        </AdminPrivateRoute>
-                    } />
-                    <Route path="addProduct" element={
-                        <AdminPrivateRoute>
-                            <AddProduct />
-                        </AdminPrivateRoute>
-                    } />
-                    <Route path="manageProducts" element={<AdminPrivateRoute>
-                        <ManageProduct />
-                    </AdminPrivateRoute>} />
-                    <Route path="makeAdmin" element={<AdminPrivateRoute>
-                        <MakeAdmin />
-                    </AdminPrivateRoute>} />
+                <Route path="dashboard" element={<PrivateRoute>< Dashboard /></PrivateRoute>}>
+                    <Route path="/dashboard" element={<DashboardHome />}/>
+                    <Route path="payment" element={<Payment />} />
+                    <Route path="review" element={<ReviewAdding />} />
+                    <Route path="orders" element={<AdminPrivateRoute><Orders /></AdminPrivateRoute>} />
+                    <Route path="addProduct" element={<AdminPrivateRoute><AddProduct /></AdminPrivateRoute>} />
+                    <Route path="manageProducts" element={<AdminPrivateRoute><ManageProduct /></AdminPrivateRoute>} />
+                    <Route path="makeAdmin" element={<AdminPrivateRoute><MakeAdmin /></AdminPrivateRoute>} />
                 </Route>
                 <Route path="*" element={<NotFound />} />
             </Routes>

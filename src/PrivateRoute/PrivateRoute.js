@@ -6,7 +6,7 @@ import { CircularProgress } from '@mui/material';
 const PrivateRoute = ({children}) => {
 
     const {user,isLoading} = UseFirebaseAuth();    
-    const location = useLocation();   
+    let location = useLocation();   
 
     const CircularProgressStyle={
       position: 'absolute',
@@ -27,7 +27,6 @@ const PrivateRoute = ({children}) => {
     }
     return children;
 
-    
 };
 
 export default PrivateRoute;

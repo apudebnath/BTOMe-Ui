@@ -43,7 +43,7 @@ function Dashboard(props) {
                     sx={{ p: 1, backgroundColor: 'white' }}
                 >
                     <Button>
-                        <Link className='text-decoration-none' to="/dashboard" > Dashboard </Link ></Button >,
+                        <Link className='text-decoration-none' to="dashboard" > Dashboard </Link ></Button >
                     {admin &&
                         <>
                             <Button>

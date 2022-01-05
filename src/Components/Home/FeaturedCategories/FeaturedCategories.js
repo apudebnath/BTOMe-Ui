@@ -1,6 +1,5 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import "./FeaturedCategories.css"
 const FeaturedCategories = () => {
     return (
@@ -11,8 +10,8 @@ const FeaturedCategories = () => {
                 <p>BTOMe is a trusted and powerful eCommerce store for all.</p>
             </div>
             <Container>
-                <Row> 
-                    <Col sm={6}> 
+                <Row>
+                    <Col sm={6}>
                         <div className="img-hover-zoom"> <img src="https://z9d7c4u6.rocketcdn.me/wp-content/uploads/2016/09/furniture10_2-430x490.jpg.webp" className="w-100" alt="" /></div>
                         <div className="text-start ">
                             <h4>Furniture</h4>

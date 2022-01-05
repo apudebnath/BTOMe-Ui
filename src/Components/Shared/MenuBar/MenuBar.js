@@ -3,8 +3,12 @@ import { Link } from 'react-router-dom';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons';
+import UseFirebaseAuth from '../../../customhook/UseFirebaseAuth';
 
 const MenuBar = () => {
+
+    const { user, admin } = UseFirebaseAuth();
+
     return (
         <div>
             <Navbar collapseOnSelect expand="lg" className="bg-white" variant="light" fixed='top'>
@@ -35,15 +39,25 @@ const MenuBar = () => {
                                 <FontAwesomeIcon className="mx-2" icon={faShoppingCart} size='1x' />
 
                             </Nav.Link>
-                            <Nav.Link as={Link} to="/login">
-                                <FontAwesomeIcon className="mx-2" icon={faUser} size='1x' />
 
-                            </Nav.Link>
+
+                            {user?.email || admin ?
+                                <>
+                                    <Nav.Link as={Link} className='fw-bold' to="/dashboard">
+                                        <FontAwesomeIcon className="mx-2" icon={faUser} size='1x' /> Dashboard
+                                    </Nav.Link>
+                                </>
+                                :
+                                <Nav.Link as={Link} to="/login">
+                                    <FontAwesomeIcon className="mx-2" icon={faUser} size='1x' />
+                                </Nav.Link>
+                            }
+
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </div>
+        </div >
     );
 };
 

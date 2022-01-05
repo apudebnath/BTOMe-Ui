@@ -55,14 +55,14 @@ function App() {
                 <Route path="about" element={<About />} />
                 <Route path="contact" element={<Contact />} />
                 <Route path="login" element={<Login />} />
-                <Route path="dashboard" element={<PrivateRoute>< Dashboard /></PrivateRoute>}>
+                <Route path="dashboard" element={< Dashboard />}>
                     <Route path="/dashboard" element={<DashboardHome />}/>
                     <Route path="payment" element={<Payment />} />
                     <Route path="review" element={<ReviewAdding />} />
-                    <Route path="orders" element={<AdminPrivateRoute><Orders /></AdminPrivateRoute>} />
-                    <Route path="addProduct" element={<AdminPrivateRoute><AddProduct /></AdminPrivateRoute>} />
-                    <Route path="manageProducts" element={<AdminPrivateRoute><ManageProduct /></AdminPrivateRoute>} />
-                    <Route path="makeAdmin" element={<AdminPrivateRoute><MakeAdmin /></AdminPrivateRoute>} />
+                    <Route path="orders" element={<Orders />} />
+                    <Route path="addProduct" element={<AddProduct />} />
+                    <Route path="manageProducts" element={<ManageProduct />} />
+                    <Route path="makeAdmin" element={<MakeAdmin />} />
                 </Route>
                 <Route path="*" element={<NotFound />} />
             </Routes>

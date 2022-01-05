@@ -12,14 +12,14 @@ import Toolbar from '@mui/material/Toolbar';
 import { Button, Typography } from '@mui/material';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Footer from '../../Home/Footer/Footer';
-import UseFirebaseAuth from '../../../customhook/UseFirebaseAuth';
+/* import UseFirebaseAuth from '../../../customhook/UseFirebaseAuth'; */
 
 const drawerWidth = 300;
 
 function Dashboard(props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
-    const { admin, logOut } = UseFirebaseAuth();
+    /* const { logOut } = UseFirebaseAuth(); */
 
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
@@ -43,9 +43,8 @@ function Dashboard(props) {
                     sx={{ p: 1, backgroundColor: 'white' }}
                 >
                     <Button>
-                        <Link className='text-decoration-none' to="dashboard" > Dashboard </Link ></Button >
-                    {admin &&
-                        <>
+                        <Link className='text-decoration-none' to="/dashboard" > Dashboard </Link ></Button >
+
                             <Button>
                                 <Link className='text-decoration-none' to="orders">Manage Orders </Link>
                             </Button>
@@ -58,19 +57,18 @@ function Dashboard(props) {
                             <Button>
                                 <Link className='text-decoration-none' to="makeAdmin">Make An Admin </Link>
                             </Button>
-                        </>
-                    }
-                    {!admin &&
+
+
                         <Button>
                             <Link className='text-decoration-none' to="review"> Give a Review </Link>
                         </Button>
-                    }
+
                     <Button>
                         <Link className='text-decoration-none' to="payment">Payment </Link>
                     </Button>
-                    <Button>
+                    {/* <Button>
                         <Link onClick={logOut} className='text-decoration-none'>Log Out </Link>
-                    </Button>
+                    </Button> */}
                 </ButtonGroup>
             </div>
             <Divider />

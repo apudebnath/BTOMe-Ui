@@ -18,7 +18,7 @@ const useFirebase = () => {
     const auth = getAuth();
 
     const updateNavigate = (navigate, location) => {
-        const replace = location?.state?.from || '/dashboard'
+        const replace = location?.state?.from || '/'
         navigate(replace, {
             replace: true,
         })

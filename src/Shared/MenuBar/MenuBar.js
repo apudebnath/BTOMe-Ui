@@ -27,10 +27,10 @@ const MenuBar = () => {
                             <Nav.Link as={Link} to="about" className="me-2 fw-bold">About</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link as={Link} to="search" className="me-2">
+                            <Nav.Link as={Link} to="/" className="me-2">
                                 <FontAwesomeIcon className="mx-2" icon={faSearch} size='1x' />
                             </Nav.Link>
-                            <Nav.Link as={Link} to="cart" className="me-2 ">
+                            <Nav.Link as={Link} to="/" className="me-2 ">
 
                                 <FontAwesomeIcon className="mx-2" icon={faShoppingCart} size='1x' />
 

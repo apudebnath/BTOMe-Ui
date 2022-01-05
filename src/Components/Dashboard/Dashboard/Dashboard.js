@@ -19,7 +19,7 @@ const drawerWidth = 300;
 function Dashboard(props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
-    const { user, admin, logOut } = UseFirebaseAuth();
+    const { admin, logOut } = UseFirebaseAuth();
 
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);

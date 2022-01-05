@@ -46,23 +46,52 @@ const Registration = () => {
       <div className='text-center container pt-5 mt-5'>
         <h2>Registration</h2>
         <div className='row py-4 d-flex justify-content-center align-items-center'>
-          <div className='col-md-6 col-12 text-center d-flex justify-content-center align-items-center'>
+          <div className='col-md-6 col-12'>
             <Form onSubmit={handleRegistrationForm}>
+
               <Form.Group className="mb-3" controlId="formBasicName">
-                <Form.Control type="text" placeholder="Enter Name" name="userName" onInput={handleRegistrationInput} />
+                <Form.Control
+                  type="text"
+                  placeholder="Enter Name"
+                  name="userName"
+                  onInput={handleRegistrationInput}
+                />
               </Form.Group>
+
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control type="email" placeholder="Enter email" name="userEmail" onInput={handleRegistrationInput} />
+                <Form.Control
+                  type="email"
+                  placeholder="Enter email"
+                  name="userEmail"
+                  onInput={handleRegistrationInput}
+                />
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicPhone">
-                <Form.Control type="text" placeholder="Phone Number" name="userMobileNumber" onInput={handleRegistrationInput} />
+                <Form.Control
+                  type="text"
+                  placeholder="Phone Number"
+                  name="userMobileNumber"
+                  onInput={handleRegistrationInput}
+                />
               </Form.Group>
+
               <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Control type="password" placeholder="Password" name="password" onInput={handleRegistrationInput} />
+                <Form.Control
+                  type="password"
+                  placeholder="Password"
+                  name="password"
+                  onInput={handleRegistrationInput}
+                />
               </Form.Group>
+
               <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Control type="password" placeholder="Password" name="confirmPassword" onInput={handleRegistrationInput} />
+                <Form.Control
+                  type="password"
+                  placeholder="Re-type Password"
+                  name="confirmPassword"
+                  onInput={handleRegistrationInput}
+                />
               </Form.Group>
 
               {/* showing error/succuss massage  */}
@@ -77,17 +106,33 @@ const Registration = () => {
                 </div>
               </div>
 
-              <Button className='px-5' variant="light" type="submit" className="w-100 fw-bold mx-auto btn-outline-dark">
+              <Button
+                className='px-5'
+                variant="light"
+                type="submit"
+                className="w-100 fw-bold mx-auto btn-outline-dark"
+              >
                 Register
               </Button>
+
               <br /><br />
-              <Button as={Link} to="/login" variant="white" type="submit" className="fw-bold mt-4 w-100">Already have an account?
+
+              <Button
+                as={Link}
+                to="/login"
+                variant="white"
+                type="submit"
+                className="fw-bold mt-4 w-100"
+              >Already have an account?
               </Button>
+
             </Form>
           </div>
+
           <div className='col-md-6 col-12'>
             <img className='w-100 h-75' style={{ objectFit: 'cover' }} src={image} alt="" />
           </div>
+
         </div>
       </div>
       <Footer />

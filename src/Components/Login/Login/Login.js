@@ -40,12 +40,23 @@ const Login = () => {
           </div>
           <div className='col-md-6 col-12 text-center d-flex justify-content-center align-items-center'>
             <Form onSubmit={handleLoginForm}>
+
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control type="email" placeholder="Enter email" name="userEmail" onInput={handleLoginInput} />
+                <Form.Control
+                  type="email"
+                  placeholder="Enter email"
+                  name="userEmail"
+                  onInput={handleLoginInput}
+                />
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Control type="password" placeholder="Password" name="password" onInput={handleLoginInput} />
+                <Form.Control
+                  type="password"
+                  placeholder="Password"
+                  name="password"
+                  onInput={handleLoginInput}
+                />
               </Form.Group>
 
               {/* showing error/succuss massage  */}
